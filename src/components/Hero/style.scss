@@ -30,6 +30,14 @@
     transform: translate(-50%, -50%);
     font-family: "Bai Jamjuree", sans-serif;
     font-weight: 600;
+    .line-one {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+	.line-two {
+		opacity: 0;
+		transform: translateX(-100px);
+	  }
   }
 }
 .lineParent {
