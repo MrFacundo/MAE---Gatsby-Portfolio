@@ -357,11 +357,6 @@ function Gallery({
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     // This does not seem to work without a settimeout
     setTimeout(() => {
-      console.log(ref.current.offsetWidth);
-      console.log(ref.current.clientWidth);
-      console.log({
-        current: ref.current
-      });
       let sections = gsap__WEBPACK_IMPORTED_MODULE_4__.gsap.utils.toArray(".gallery-item-wrapper");
       gsap__WEBPACK_IMPORTED_MODULE_4__.gsap.to(sections, {
         xPercent: -100 * (sections.length - 1),
@@ -395,7 +390,7 @@ function Gallery({
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, activeImage), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: "divider"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, images.length)), images.map((image, index) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(GalleryItem, Object.assign({
-    key: src,
+    key: index,
     index: index
   }, image, {
     updateActiveImage: handleUpdateActiveImage
@@ -417,24 +412,45 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
 /* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/components/Hero/style.scss");
 /* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_1__);
 
 
+
 function Hero() {
+  const app = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    let ctx = gsap__WEBPACK_IMPORTED_MODULE_2__["default"].context(() => {
+      gsap__WEBPACK_IMPORTED_MODULE_2__["default"].to(".line-one", {
+        x: 0,
+        opacity: 1,
+        duration: 0.5
+      });
+      gsap__WEBPACK_IMPORTED_MODULE_2__["default"].to(".line-two", {
+        x: 0,
+        opacity: 1,
+        duration: 0.5
+      });
+    }, app);
+    return () => ctx.revert();
+  }, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     className: "hero-container",
     "data-scroll-section": true
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
     className: "hero-menu"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Intro"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, "Featured")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    ref: app,
     className: "hero-text",
     id: "hero-text"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "line-one",
     "data-scroll": true,
     "data-scroll-speed": "1",
     "data-scroll-direction": "horizontal"
   }, "Lorem ipsum dolor"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "line-two",
     "data-scroll": true,
     "data-scroll-speed": "-1",
     "data-scroll-direction": "horizontal"
@@ -536,7 +552,14 @@ const Home = () => {
     0: preloader,
     1: setPreload
   } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
+  const {
+    0: loaded,
+    1: setLoaded
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   (0,_hooks_useLocoScroll__WEBPACK_IMPORTED_MODULE_7__["default"])(!preloader);
+  setTimeout(() => {
+    setLoaded(true);
+  }, 1000);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     if (!preloader && ref) {
       if (typeof window === "undefined" || !window.document) {
@@ -544,7 +567,7 @@ const Home = () => {
       }
     }
   }, [preloader]);
-  const [timer, setTimer] = react__WEBPACK_IMPORTED_MODULE_0___default().useState(3);
+  const [timer, setTimer] = react__WEBPACK_IMPORTED_MODULE_0___default().useState(2);
   const id = react__WEBPACK_IMPORTED_MODULE_0___default().useRef(null);
 
   const clear = () => {
@@ -568,7 +591,7 @@ const Home = () => {
     return null;
   }
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, preloader ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, !loaded ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "loader-wrapper absolute"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Flirty flowers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Rio de Janeiro")) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "main-container",
