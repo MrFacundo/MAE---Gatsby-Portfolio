@@ -15,13 +15,8 @@ import "../styles/home.scss";
 const Home = () => {
   const ref = useRef(null);
   const [preloader, setPreload] = useState(true);
-  const [loaded, setLoaded] = useState(false);
 
   useLocoScroll(!preloader);
-
-  setTimeout(() => {
-    setLoaded(true);
-  }, 1000);
 
   useEffect(() => {
     if (!preloader && ref) {
@@ -59,7 +54,7 @@ const Home = () => {
 
   return (
     <>
-      {!loaded ? (
+      {preloader ? (
         <div className="loader-wrapper absolute">
           <h1>Flirty flowers</h1>
           <h2>Rio de Janeiro</h2>

@@ -557,9 +557,11 @@ const Home = () => {
     1: setLoaded
   } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   (0,_hooks_useLocoScroll__WEBPACK_IMPORTED_MODULE_7__["default"])(!preloader);
-  setTimeout(() => {
-    setLoaded(true);
-  }, 1000);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    setTimeout(() => {
+      setLoaded(true);
+    }, 1000);
+  }, []);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     if (!preloader && ref) {
       if (typeof window === "undefined" || !window.document) {

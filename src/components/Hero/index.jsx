@@ -8,8 +8,8 @@ export default function Hero() {
 
   useEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.to(".line-one", { x: 0, opacity: 1, duration: 0.5 });
-      gsap.to(".line-two", { x: 0, opacity: 1, duration: 0.5 });
+      gsap.to(".line-one", { x: 0, opacity: 1, duration: 1 });
+      gsap.to(".line-two", { x: 0, opacity: 1, duration: 1, delay: 0.5 });
     }, app);
 
     return () => ctx.revert();
