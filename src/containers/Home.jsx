@@ -4,8 +4,7 @@ import { useRef } from "react";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import CustomCursor from "../CustomCursor";
-import Header from "../components/Header";
+import Hero from "../components/Hero";
 import Featured from "../components/Featured";
 import About from "../components/About";
 import Gallery from "../components/Gallery";
@@ -16,7 +15,6 @@ import "../styles/home.scss";
 const Home = () => {
   const ref = useRef(null);
   const [preloader, setPreload] = useState(true);
-
 
   useLocoScroll(!preloader);
 
@@ -56,7 +54,6 @@ const Home = () => {
 
   return (
     <>
-      <CustomCursor />
       {preloader ? (
         <div className="loader-wrapper absolute">
           <h1>Flirty flowers</h1>
@@ -70,8 +67,8 @@ const Home = () => {
           ref={ref}
         >
           <Navbar />
-          <Header />
-          <Featured />
+          <Hero />
+          {/* <Featured /> */}
           <About />
           <Gallery />
           <Footer />
