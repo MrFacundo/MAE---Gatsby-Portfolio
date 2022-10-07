@@ -17,3 +17,11 @@ const Index = () => {
   );
 };
 export default Index;
+
+
+export const Head = () => (
+  <>
+    <title>Maria Danai Eguiguren</title>
+    <meta name="description" content="Maria Danai Eguiguren"/>
+  </>
+)
