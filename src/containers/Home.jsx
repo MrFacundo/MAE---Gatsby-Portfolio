@@ -16,7 +16,9 @@ const Home = () => {
   const ref = useRef(null);
   const [preloader, setPreload] = useState(true);
 
-  useLocoScroll(!preloader);
+  const siteInProgressMessage = true;
+
+  // useLocoScroll(!preloader);
 
   useEffect(() => {
     if (!preloader && ref) {
@@ -54,10 +56,11 @@ const Home = () => {
 
   return (
     <>
-      {preloader ? (
+      {preloader || siteInProgressMessage ? (
         <div className="loader-wrapper absolute">
-          <h1>Flirty flowers</h1>
-          <h2>Rio de Janeiro</h2>
+          <h1 className="line-one">Sitio en construcción</h1>
+          <h1 className="line-two">Em breve</h1>
+          <h1 className="line-three">Work in progress</h1>
         </div>
       ) : (
         <div
