@@ -7,15 +7,8 @@
 module.exports = {
   /* Your site config here */
   plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-plugin-less`,
-      options: {
-        javascriptEnabled: true,
-        modifyVars: {
-          "primary-color": "#00BFA6",
-        },
-      },
-    },
   ],
 };

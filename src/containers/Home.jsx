@@ -2,11 +2,16 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { useRef } from "react";
 
+import logo from "../images/IMG_9808.jpg"
+import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+
+
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
-import Featured from "../components/Featured";
-import About from "../components/About";
+import Loader from "../components/Loader";
+import Description from "../components/Description";
 import Gallery from "../components/Gallery";
 import useLocoScroll from "../hooks/useLocoScroll";
 
@@ -55,10 +60,7 @@ const Home = () => {
   return (
     <>
       {preloader ? (
-        <div className="loader-wrapper absolute">
-          <h1>Flirty flowers</h1>
-          <h2>Rio de Janeiro</h2>
-        </div>
+        <Loader />
       ) : (
         <div
           className="main-container"
@@ -68,8 +70,10 @@ const Home = () => {
         >
           <Navbar />
           <Hero />
+          {/* <img src={logo} alt="Logo" /> */}
+
           {/* <Featured /> */}
-          <About />
+          <Description />
           <Gallery />
           <Footer />
         </div>
