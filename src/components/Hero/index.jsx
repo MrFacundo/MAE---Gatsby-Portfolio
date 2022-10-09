@@ -8,38 +8,37 @@ export default function Hero() {
 
   useEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.to(".line-one", { x: 0, opacity: 1, duration: 1 });
-      gsap.to(".line-two", { x: 0, opacity: 1, duration: 1, delay: 0.5 });
+      gsap.to(".line-one", {opacity: 1, duration: 1.5 });
+      gsap.to(".line-two", {opacity: 1, duration: 1.5, delay: 0.7 });
     }, app);
 
     return () => ctx.revert();
   }, []);
 
   return (
-    <section className="hero-container" data-scroll-section>
-      <ul className="hero-menu">
-        <li>Intro</li>
-        <li>About</li>
-        <li>Featured</li>
-      </ul>
-      <div ref={app} className="hero-text" id="hero-text">
-        <h2
-          className="line-one"
-          data-scroll
-          data-scroll-speed="1"
-          data-scroll-direction="horizontal"
-        >
-          Lorem ipsum dolor
-        </h2>
-        <h2
-          className="line-two"
-          data-scroll
-          data-scroll-speed="-1"
-          data-scroll-direction="horizontal"
-        >
-          amet consectetur adipisicing.
-        </h2>
-      </div>
-    </section>
+    <>
+
+      <section className="hero-container" data-scroll-section>
+      <div className="overlay absolute"></div>
+        <div ref={app} className="hero-text" id="hero-text">
+          <h2
+            className="line-one"
+            data-scroll
+            data-scroll-speed="1"
+            data-scroll-direction="horizontal"
+          >
+            Nombre
+          </h2>
+          <h2
+            className="line-two"
+            data-scroll
+            data-scroll-speed="-1"
+            data-scroll-direction="horizontal"
+          >
+            del sitio{" "}
+          </h2>
+        </div>
+      </section>
+    </>
   );
 }

@@ -1,19 +1,23 @@
+@import "../../styles/_variables.scss";
+
+
 .gallery-wrap {
-  background-color: #d53f41;
+  background-color: $primary;
   margin-left: -5vw;
   margin-right: -5vw;
+  padding: 0;
 }
 
 .gallery-counter {
   position: absolute;
   top: 10%;
-  left: 100px;
+  left: 200px;
   z-index: 1;
   mix-blend-mode: difference;
   line-height: 16px;
-  color: #dbd8d6;
+  color: $onyx;
 
-  font-family: "Bai Jamjuree";
+  font-family: $baiJamjuree;
   font-weight: 600;
 
   font-size: 16px;
@@ -22,7 +26,7 @@
 
   .divider {
     content: "";
-    background-color: white;
+    background-color: $tertiary;
     width: 6.25vw;
     margin: 7px 10px;
     height: 1px;
@@ -47,17 +51,17 @@
 
   .gallery-item-info {
     position: absolute;
-    bottom: 10%;
+    bottom: 20%;
     z-index: 1;
     transform: translateX(-20%);
-    color: #dbd8d6;
-    color: white;
+    color: $onyx;
+    max-width: 60%;
     .gallery-info-title {
       line-height: 6vw;
-      font-family: "Bai Jamjuree";
+      font-family: $didactic;
       font-weight: 600;
-
-      font-size: 6vw;
+      
+      font-size: 5rem;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -67,15 +71,15 @@
       color: transparent;
       font-family: "Bodoni Moda";
       font-weight: 400;
-      font-size: 6vw;
+      font-size: 5rem;
       -webkit-font-smoothing: antialiased;
-      -webkit-text-stroke: 2px #dbd8d6;
+      -webkit-text-stroke: 2px $tertiary;
     }
 
-    .gallery-info-category {
+    .gallery-info-excerpt {
       position: relative;
       line-height: 24px;
-      font-family: "Bai Jamjuree";
+      font-family: $didactic;
       font-weight: 400;
       font-size: 24px;
       -webkit-font-smoothing: antialiased;
@@ -102,6 +106,8 @@
     transform-origin: center;
     width: 100%;
     height: 100%;
+    width: 50%;
+    float: right;
     will-change: transform;
     transform: scale(0.7);
     transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
