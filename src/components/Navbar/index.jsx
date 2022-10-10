@@ -1,9 +1,14 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef,forwardRef, useState } from "react";
+import { gsap } from "gsap";
+
 import "./style.scss";
 
 import Menu from "../Menu";
 
 export default function Navbar() {
+
+  const boxRef = useRef();
+
   // State of our Menu
   const [state, setState] = useState({
     clicked: false,
@@ -15,30 +20,29 @@ export default function Navbar() {
         initial: null,
         clicked: true,
       });
-      console.log("1")
     } else if (state.clicked === true) {
-      setState({
-        clicked: !state.clicked,
+      gsap.to(boxRef.current, {
+        opacity: 0,
+        onComplete: () =>
+          setState({
+            clicked: !state.clicked,
+          }),
       });
-      console.log("2")
 
     } else if (state.clicked === false) {
       setState({
         clicked: !state.clicked,
-        menuName: "Close",
       });
-      console.log("3")
     }
   };
 
   return (
     <div className="navbar-container" data-scroll-section>
       <div className="navbar">
-          <span onClick={handleMenu}>
-            Menu
-          {state.clicked && <Menu state={state} />}
-          </span>
-          
+        <span onClick={handleMenu}>
+          Menu
+          {state.clicked && <Menu state={state} ref={boxRef} />}
+        </span>
       </div>
     </div>
   );

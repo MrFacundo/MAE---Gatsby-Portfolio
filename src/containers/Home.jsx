@@ -13,6 +13,10 @@ import Hero from "../components/Hero";
 import Loader from "../components/Loader";
 import Description from "../components/Description";
 import Gallery from "../components/Gallery";
+import About from "../components/About";
+
+
+
 import useLocoScroll from "../hooks/useLocoScroll";
 
 import "../styles/home.scss";
@@ -75,6 +79,7 @@ const Home = () => {
           {/* <Featured /> */}
           <Description />
           <Gallery />
+          <About />
           <Footer />
         </div>
       )}

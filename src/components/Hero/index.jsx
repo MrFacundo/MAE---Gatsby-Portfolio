@@ -27,7 +27,7 @@ export default function Hero() {
             data-scroll-speed="1"
             data-scroll-direction="horizontal"
           >
-            Nombre
+            Sanação
           </h2>
           <h2
             className="line-two"
@@ -35,7 +35,7 @@ export default function Hero() {
             data-scroll-speed="-1"
             data-scroll-direction="horizontal"
           >
-            del sitio{" "}
+            Assistida
           </h2>
         </div>
       </section>
