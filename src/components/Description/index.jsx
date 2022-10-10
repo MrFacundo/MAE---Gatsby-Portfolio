@@ -36,6 +36,7 @@ export default function Description() {
     <section
       className={cn("description-section", { "is-reveal": reveal })}
       data-scroll-section
+      id="intro"
     >
       <p ref={ref} id="headline" className={cn({ "is-reveal": reveal })}>
         Short description of the site. Lorem ipsum dolor sit amet consectetur,

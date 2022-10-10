@@ -1,11 +1,10 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect,forwardRef } from "react";
 import "./style.scss";
 
-import { gsap } from "gsap";
 
-const Menu = ({ state }) => {
+const Menu = forwardRef(({ state }, ref) => {
   return (
-    <div className="menu">
+    <div ref={ref} className="menu">
       <li>
         <span className="item" to="/opportunities">
           Services
@@ -19,6 +18,6 @@ const Menu = ({ state }) => {
       </li>
     </div>
   );
-};
+});
 
 export default Menu;
