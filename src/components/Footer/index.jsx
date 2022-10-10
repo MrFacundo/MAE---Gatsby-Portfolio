@@ -23,10 +23,10 @@ export default function Footer() {
         type: "lines",
         linesClass: "lineChildren",
       });
-      const splitParent = new SplitText("#location-text", {
-        type: "lines",
-        linesClass: "lineParent",
-      });
+      // const splitParent = new SplitText("#location-text", {
+      //   type: "lines",
+      //   linesClass: "lineParent",
+      // });
       gsap.fromTo(
         split.lines,
         { y: 200 },
