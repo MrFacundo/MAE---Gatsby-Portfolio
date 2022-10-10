@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import "./style.scss";
 
@@ -7,7 +7,7 @@ export default function Loader() {
 
   useEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.to("#container", { scale: 1, duration: 1, duration: 1 });
+      gsap.to("#container", { scale: 1, duration: 1 });
       gsap.to("#overlay", { opacity: 1, delay: 1, duration: 1 });
     }, loader);
 

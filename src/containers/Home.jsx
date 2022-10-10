@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import { useRef } from "react";
 
-import logo from "../images/IMG_9808.jpg"
-import { StaticImage } from "gatsby-plugin-image";
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+// import logo from "../images/IMG_9808.jpg"
+// import { StaticImage } from "gatsby-plugin-image";
+// import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 
 import Navbar from "../components/Navbar";
