@@ -17,7 +17,6 @@ export default function Hero() {
 
   return (
     <>
-
       <section className="hero-container" data-scroll-section>
       <div className="overlay absolute"></div>
         <div ref={app} className="hero-text" id="hero-text">

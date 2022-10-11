@@ -7,11 +7,14 @@
   padding: 0;
   height: 60vh;
   p {
-    font-size: 70px;
+    font-size: 30px;
     line-height: 1.12;
     opacity: 0;
     margin: 0 50px;
     color: $onyx;
+    @media (min-width: $lg) {
+      font-size: 70px;
+    }
     > div {
       font-family: "Didact Gothic", sans-serif;
       opacity: 0;

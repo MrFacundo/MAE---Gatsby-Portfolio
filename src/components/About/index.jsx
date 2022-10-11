@@ -26,7 +26,7 @@ const About = () => {
       <div
         className="left"
         data-scroll
-        data-scroll-speed="-1"
+        data-scroll-speed="-1.5"
         data-scroll-target="#fixed-target"
       >
         <p> {Text.paragraph1}</p>

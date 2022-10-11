@@ -13,11 +13,7 @@ body {
 }
 
 .main-container {
-  // padding: 0 5vw;
-  // clip-path: inset(100% 0% 0% 0%);
-  // backface-visibility: hidden;
-  // background-image: url("./IMG_9808.jpg");
-
+  backface-visibility: hidden;
 }
 
 section {
@@ -27,7 +23,7 @@ section {
   }
 }
 .absolute {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   bottom: 0;

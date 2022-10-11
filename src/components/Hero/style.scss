@@ -5,10 +5,14 @@
   width: 100vw;
   height: 100vh;
   padding: 0;
-  background-image: url("../../images/IMG_9808.jpg");
+  background-image: url("../../images/IMG_9808_mobile.jpg");
+  @media (min-width: $lg) {
+    background-image: url("../../images/IMG_9808.jpg");
+  }
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
+  background-position-x: center;
   color: $primary;
 
   .hero-menu {
@@ -16,12 +20,10 @@
     position: absolute;
     left: 0;
     top: 100px;
-
     letter-spacing: 1px;
     font-family: "Didact Gothic", sans-serif;
     font-weight: 600;
     text-transform: uppercase;
-
     li {
       margin: 10px 0;
     }
@@ -29,7 +31,10 @@
 
   .hero-text {
     z-index: 3;
-    font-size: 5vw;
+    font-size: 2rem;
+    @media (min-width: $lg) {
+      font-size: 4rem;
+    }
     text-align: center;
     position: absolute;
     left: 50%;
@@ -38,16 +43,21 @@
     transform: translate(-50%, -50%);
     font-family: "Syncopate", sans-serif;
     text-transform: uppercase;
-    // font-family: "Playfair Display", serif;
     font-weight: 400;
     .line-one {
       opacity: 0;
-      padding-right: 10rem;
+      padding-right: 5rem;
+      @media (min-width: $lg) {
+        padding-right: 10rem;
+      }
     }
     .line-two {
       opacity: 0;
-      padding-left: 10rem;
+      padding-left: 5rem;
       padding-top: 2rem;
+      @media (min-width: $lg) {
+        padding-left: 10rem;
+      }
     }
   }
 }

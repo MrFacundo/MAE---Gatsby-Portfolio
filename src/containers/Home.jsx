@@ -74,16 +74,16 @@ const Home = () => {
           data-scroll-container
           ref={ref}
         >
-          <Navbar />
+          {/* <Navbar /> */}
           <Hero />
           {/* <img src={logo} alt="Logo" /> */}
 
           {/* <Featured /> */}
           <Description />
           <Gallery />
-          <About />
+          {/* <About />
           <Contact />
-          <Footer />
+          <Footer /> */}
         </div>
       )}
     </>
