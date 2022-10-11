@@ -48,7 +48,7 @@ function GalleryItem({
     if (onScreen) {
       updateActiveImage(index);
     }
-  }, [onScreen, index]);
+  }, [onScreen, index, updateActiveImage]);
 
   return (
     <div

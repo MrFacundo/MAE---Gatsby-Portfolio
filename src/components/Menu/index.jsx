@@ -1,4 +1,4 @@
-import React, { useRef, useEffect,forwardRef } from "react";
+import React, { forwardRef } from "react";
 import "./style.scss";
 
 
@@ -6,7 +6,7 @@ const Menu = forwardRef(({ state }, ref) => {
   return (
     <div ref={ref} className="menu">
       <li>
-        <span className="item" to="/opportunities">
+        <span className="item">
           Services
         </span>
       </li>

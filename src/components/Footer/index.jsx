@@ -17,6 +17,17 @@ export default function Footer() {
 
   useEffect(() => {
     if (reveal) {
+<<<<<<< HEAD
+=======
+      const split = new SplitText("#location-text", {
+        type: "lines",
+        linesClass: "lineChildren",
+      });
+      // const splitParent = new SplitText("#location-text", {
+      //   type: "lines",
+      //   linesClass: "lineParent",
+      // });
+>>>>>>> 8bc54ed810479cdf8e3652abc5d1d09f91ecabde
       gsap.fromTo(
         "#location-text",
         { y: 30 },
