@@ -8,12 +8,14 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Contact from "../components/Contact";
 import Hero from "../components/Hero";
 import Loader from "../components/Loader";
 import Description from "../components/Description";
 import Gallery from "../components/Gallery";
 import About from "../components/About";
+import Footer from "../components/Footer";
+
 
 
 
@@ -80,6 +82,7 @@ const Home = () => {
           <Description />
           <Gallery />
           <About />
+          <Contact />
           <Footer />
         </div>
       )}

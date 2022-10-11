@@ -12,3 +12,10 @@ $baiJamjuree: "Bai Jamjuree", sans-serif;
 $syncopate: "Syncopate", sans-serif;
 $bodoniModa: "Bodoni Moda", serif;
 $didactic: "Didact Gothic", sans-serif;
+
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

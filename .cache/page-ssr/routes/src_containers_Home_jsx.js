@@ -465,12 +465,12 @@ function Hero() {
     "data-scroll": true,
     "data-scroll-speed": "1",
     "data-scroll-direction": "horizontal"
-  }, "Nombre"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+  }, "Sana\xE7\xE3o"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: "line-two",
     "data-scroll": true,
     "data-scroll-speed": "-1",
     "data-scroll-direction": "horizontal"
-  }, "del sitio", " "))));
+  }, "Assistida"))));
 }
 
 /***/ }),
