@@ -1,8 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import useOnScreen from "../../hooks/useOnScreen";
-import SectionHeader from "../SectionHeader";
 import gsap from "gsap";
-import SplitText from "../../utils/Split3.min";
 import cn from "classnames";
 
 import "./style.scss";
@@ -19,6 +17,8 @@ export default function Footer() {
 
   useEffect(() => {
     if (reveal) {
+<<<<<<< HEAD
+=======
       const split = new SplitText("#location-text", {
         type: "lines",
         linesClass: "lineChildren",
@@ -27,14 +27,13 @@ export default function Footer() {
       //   type: "lines",
       //   linesClass: "lineParent",
       // });
+>>>>>>> 8bc54ed810479cdf8e3652abc5d1d09f91ecabde
       gsap.fromTo(
-        split.lines,
-        { y: 200 },
+        "#location-text",
+        { y: 30 },
         {
           duration: 1,
           y: 0,
-          // opacity: 1,
-          stagger: 0.1,
           ease: "power2",
         }
       );
@@ -43,15 +42,17 @@ export default function Footer() {
 
   return (
     <section className="footer" data-scroll-section>
-      <SectionHeader title="Made in" />
-
+      <div className="footer-container">
+      <h1>© 2022 Maria Danai Eguiguren</h1>
       <h1
         className={cn("location", { "is-reveal": reveal })}
         id="location-text"
         ref={ref}
       >
-        Rio de Janeiro
+        Made with &#x3c;3 by
       </h1>
+
+      </div>
     </section>
   );
 }
