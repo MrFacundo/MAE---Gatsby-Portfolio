@@ -17,17 +17,6 @@ export default function Footer() {
 
   useEffect(() => {
     if (reveal) {
-<<<<<<< HEAD
-=======
-      const split = new SplitText("#location-text", {
-        type: "lines",
-        linesClass: "lineChildren",
-      });
-      // const splitParent = new SplitText("#location-text", {
-      //   type: "lines",
-      //   linesClass: "lineParent",
-      // });
->>>>>>> 8bc54ed810479cdf8e3652abc5d1d09f91ecabde
       gsap.fromTo(
         "#location-text",
         { y: 30 },
@@ -43,15 +32,14 @@ export default function Footer() {
   return (
     <section className="footer" data-scroll-section>
       <div className="footer-container">
-      <h1>© 2022 Maria Danai Eguiguren</h1>
-      <h1
-        className={cn("location", { "is-reveal": reveal })}
-        id="location-text"
-        ref={ref}
-      >
-        Made with &#x3c;3 by
-      </h1>
-
+        <h1>© 2022 Maria Danai Eguiguren</h1>
+        <h1
+          className={cn("location", { "is-reveal": reveal })}
+          id="location-text"
+          ref={ref}
+        >
+          Made with &#x3c;3 by
+        </h1>
       </div>
     </section>
   );

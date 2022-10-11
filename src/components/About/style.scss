@@ -2,7 +2,7 @@
 
 .about {
   background-color: $tertiary;
-  min-height: 100vh;
+  min-height: 150vh;
   display: flex;
   margin: 0 auto;
   @media (max-width: 48em) {
@@ -38,7 +38,7 @@
   width: 33%;
   position: relative;
   z-index: 5;
-  margin-top: 15%;
+  margin-top: 25%;
   margin-left: 10%;
   font-family: $didactic;
   font-weight: 400;
@@ -74,7 +74,7 @@
     width: 55%;
     position: absolute;
     left: 30%;
-    bottom: 10%;
+    bottom: 25%;
   }
 
   @media (max-width: 64em) {
