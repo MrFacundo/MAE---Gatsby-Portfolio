@@ -7,6 +7,7 @@ export default function Loader() {
 
   useEffect(() => {
     let ctx = gsap.context(() => {
+      gsap.to("#container", { opacity: 1, duration: 0.5 });
       gsap.to("#container", { scale: 1, duration: 1 });
       gsap.to("#overlay", { opacity: 1, delay: 1, duration: 1 });
     }, loader);
@@ -16,8 +17,8 @@ export default function Loader() {
 
   return (
     <div ref={loader}>
-      <div id="overlay" className="overlay absolute"></div>
       <div id="container" className="loader-container absolute">
+      <div id="overlay" className="overlay absolute"></div>
       </div>
     </div>
   );

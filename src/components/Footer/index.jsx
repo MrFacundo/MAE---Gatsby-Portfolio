@@ -32,14 +32,14 @@ export default function Footer() {
   return (
     <section className="footer" data-scroll-section>
       <div className="footer-container">
-        <h1>© 2022 Maria Danai Eguiguren</h1>
-        <h1
+        <p className="copyright">© 2022 Maria Danai Eguiguren</p>
+        <p
           className={cn("location", { "is-reveal": reveal })}
           id="location-text"
           ref={ref}
         >
           Made with &#x3c;3 by
-        </h1>
+        </p>
       </div>
     </section>
   );

@@ -1,6 +1,5 @@
 @import "../../styles/_variables.scss";
 
-
 .gallery-wrap {
   background-color: $primary;
   margin-left: -5vw;
@@ -10,19 +9,22 @@
 
 .gallery-counter {
   position: absolute;
-  top: 10%;
-  left: 200px;
+  top: 3%;
+  left: 18%;
   z-index: 1;
   mix-blend-mode: difference;
   line-height: 16px;
   color: $onyx;
-
   font-family: $baiJamjuree;
   font-weight: 600;
-
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
+
+  @media (min-width: $lg) {
+    top: 10%;
+    left: 200px;
+  }
 
   .divider {
     content: "";
@@ -35,7 +37,7 @@
 }
 
 .gallery {
-  height: 80vh;
+  height: 100vh;
 
   // padding: 10vh 0;
   width: 400%;
@@ -43,6 +45,8 @@
   flex-wrap: nowrap;
 
   .gallery-item {
+    @include flex-center;
+
     width: 100%;
     height: 100%;
     position: relative;
@@ -50,21 +54,24 @@
   }
 
   .gallery-item-info {
-    bottom: 20%;
+    top: 7%;
     z-index: 1;
     transform: translateX(-20%);
     color: $onyx;
     position: absolute;
     left: 30px;
     @media (min-width: $lg) {
+      top: auto;
       max-width: 60%;
-      left: auto;
+      left: 0;
+      bottom: 20%;
+
     }
     .gallery-info-title {
-      line-height: 3.5rem;
+      line-height: 3rem;
       font-family: $didactic;
       font-weight: 600;
-      font-size: 4rem;
+      font-size: 3rem;
       -webkit-font-smoothing: antialiased;
 
       @media (min-width: $lg) {
@@ -74,8 +81,8 @@
     }
 
     .gallery-info-subtitle {
-      line-height: 3.5rem;
-      font-size: 4rem;
+      line-height: 3rem;
+      font-size: 3rem;
       position: relative;
       color: transparent;
       font-family: "Bodoni Moda";
@@ -105,7 +112,7 @@
     grid-template-columns: 20vw 1fr 20px;
     width: 100vw;
     @media (min-width: $lg) {
-      grid-template-columns: 20vw 1fr 200px;
+      grid-template-columns: 20vw 1fr 10vw;
     }
 
     &.is-reveal {
@@ -126,8 +133,13 @@
     transform: scale(0.7);
     transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
     filter: grayscale(100%) sepia(20%) brightness(80%);
+
+    position: absolute;
+    right: 0px;
+
     @media (min-width: $lg) {
       width: 50%;
-      height: 100%;    }
+      height: 70%;
+    }
   }
 }

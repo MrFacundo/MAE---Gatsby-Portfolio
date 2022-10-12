@@ -5,7 +5,11 @@
   align-items: center;
   justify-content: center;
   padding: 0;
-  height: 60vh;
+  height: 100vh;
+  @media (min-width: $lg) {
+    height: 60vh;
+
+  }
   p {
     font-size: 30px;
     line-height: 1.12;

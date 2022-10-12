@@ -29,7 +29,7 @@ const images = [
     src: "https://images.unsplash.com/photo-1611145367651-6303b46e4040?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2006&q=100",
     title: "Registros",
     subtitle: "Akáshicos",
-    excerpt: "Os Registros Akáshicos são uma memória universal da existência, e representam um espaço multidimensional onde são arquivadas todas as experiências da alma, que incluem todos os conhecimentos e experiências de vidas passadas, vida presente e potencialidades futuras.",
+    excerpt: " Como darnos cuenta si estamos necesitando una limpieza energética?    Muchas veces nos ha ocurrido que en nuestra vida empezamos a sentir que las cosas se estancan, que no fluyen como nos gustarían, que nos cruzamos con gente que no es muy positiva y atraemos situaciones o personas que no nos agradan.     Esto es parte de poder estar necesitando una limpieza energética, que realizada desde el amor y la experiencia la persona vuelve a sentirse en si misma, bien, y a que todo fluya nuevamente.",
   },
 ];
 function GalleryItem({

@@ -2,15 +2,24 @@
 
 .footer {
   text-align: center;
-  padding: 20px 0 10px 0;
+  padding: 20px 0;
   background-color: $secondary;
   color: $primary;
 
   .footer-container {
     width: 80%;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50%;
+    row-gap: 5px;
     margin: 0 auto;
+    @media (min-width: $lg) {
+      grid-template-columns: 33% 33% 33%;
+    }
+    .copyright {
+      @media (min-width: $lg) {
+        text-align: left;
+      }
+    }
   }
   .location {
     font-size: 1rem;
@@ -23,7 +32,6 @@
     &.is-reveal {
       opacity: 1;
       transition: opacity 1s;
-
     }
   }
 }
