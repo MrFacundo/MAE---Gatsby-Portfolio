@@ -13,12 +13,12 @@ export default function Contact() {
         </div>
         <div className="social-media">
           <div className="row">
-            <FaInstagram size={50} />
-            <FaFacebook size={50} />
+            <FaInstagram  />
+            <FaFacebook  />
           </div>
           <div className="row">
-            <FaLinkedin size={50} />
-            <FaBeer size={50} />
+            <FaLinkedin  />
+            <FaBeer  />
           </div>
         </div>
       </div>
