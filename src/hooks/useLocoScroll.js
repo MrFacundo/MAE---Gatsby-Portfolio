@@ -8,6 +8,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function useLocoScroll(start) {
   useEffect(() => {
+    
+    if (typeof window === "undefined" || !window.document) {
+      console.log(`bailing out of the useeffect. Going to continue to render??`)
+      return
+    }
+    
     if (!start) return;
     let locoScroll = null;
 
