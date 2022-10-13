@@ -64,7 +64,7 @@ const Home = () => {
       {preloader ? (
         <Loader />
       ) : (
-        <div
+        {typeof window!=='undefined'? <div
           className="main-container"
           id="main-container"
           data-scroll-container
@@ -80,7 +80,7 @@ const Home = () => {
           <About />
           <Contact />
           <Footer />
-        </div>
+        </div>  }
       )}
     </>
   );
