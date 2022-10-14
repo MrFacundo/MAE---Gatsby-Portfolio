@@ -1,9 +1,11 @@
 import React from "react";
 import Loadable from "react-loadable";
+const loader = () => <div>Loading.</div>;
+
 
 const HomeLazy = Loadable({
   loader: () => import("../home/Home"), 
-  loading: () => null,
+  loading: loader,
 });
 
 const Index = () => {
