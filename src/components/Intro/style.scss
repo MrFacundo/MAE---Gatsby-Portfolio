@@ -1,0 +1,29 @@
+@import "../../styles/_variables.scss";
+
+.intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  @media (min-width: $lg) {
+    height: 60vh;
+    padding: 100px 15% 0;
+  }
+  .intro-text {
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.12;
+    margin: 0 50px;
+    color: $onyx;
+    @media (min-width: $lg) {
+      font-size: 6rem;
+    }
+    .intro-line {
+      font-family: "Didact Gothic", sans-serif;
+      opacity: 0;
+      transform: translateY(0px);
+      text-align: center !important;
+    }
+
+  }
+}

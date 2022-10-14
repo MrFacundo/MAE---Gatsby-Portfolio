@@ -9,8 +9,7 @@ export default function Hero() {
   useEffect(() => {
     let ctx = gsap.context(() => {
       gsap.to(".top", { opacity: 1, duration: 1.5 });
-      gsap.to(".line-one", { opacity: 1, duration: 1.5, delay: 0.7  });
-      gsap.to(".line-two", { opacity: 1, duration: 1.5, delay: 0.7 });
+      gsap.to(".line",{ opacity: 1, duration: 1.5, delay: 0.7  });
     }, app);
 
     return () => ctx.revert();
@@ -24,20 +23,28 @@ export default function Hero() {
           <h2 className="top">Maria Danai Eguiguren</h2>
           <div>
             <h2
-              className="line-one"
+              className="line one"
+              data-scroll
+              data-scroll-speed="-2"
+              data-scroll-direction="horizontal"
+            >
+              Método de 
+            </h2>
+            <h2
+              className="line two"
               data-scroll
               data-scroll-speed="1"
               data-scroll-direction="horizontal"
             >
-              Sanação
+              Sanación 
             </h2>
             <h2
-              className="line-two"
+              className="line three"
               data-scroll
-              data-scroll-speed="-1"
+              data-scroll-speed="-0.5"
               data-scroll-direction="horizontal"
             >
-              Assistida
+               Asistida
             </h2>
           </div>
         </div>

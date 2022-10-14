@@ -38,7 +38,7 @@ export default function Footer() {
           id="location-text"
           ref={ref}
         >
-          Made with &#x3c;3 by
+          Made with &#x3c;3 by <a href="https://mrfacundo.github.io/portfolio/"  target="_blank" rel="noopener noreferrer">F Troitero</a>
         </p>
       </div>
     </section>

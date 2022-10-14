@@ -11,7 +11,7 @@ import Navbar from "../components/Navbar";
 import Contact from "../components/Contact";
 import Hero from "../components/Hero";
 import Loader from "../components/Loader";
-import Description from "../components/Description";
+import Intro from "../components/Intro";
 import Gallery from "../components/Gallery";
 import About from "../components/About";
 import Footer from "../components/Footer";
@@ -74,7 +74,7 @@ const Home = () => {
           {/* <img src={logo} alt="Logo" /> */}
 
           {/* <Featured /> */}
-          <Description />
+          <Intro />
           <Gallery />
           <About />
           <Contact />

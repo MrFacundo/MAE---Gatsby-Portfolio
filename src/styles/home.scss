@@ -32,3 +32,8 @@ section {
   right: 0;
   z-index: 1;
 }
+a, a:hover, a:focus, a:active {
+  border: none;
+  text-decoration: none;
+  color: inherit;
+}
