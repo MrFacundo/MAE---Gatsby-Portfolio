@@ -4,36 +4,48 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import useOnScreen from "../../hooks/useOnScreen";
 import cn from "classnames";
 
+import image1 from '../../images/atletas.jpg'
+import image2 from '../../images/general.jpg'
+import image3 from '../../images/limpiezas.jpg'
+import image4 from '../../images/registros.jpg'
+import image5 from '../../images/metodo.jpg'
+
 import "./style.scss";
 
 const images = [
   {
-    src: "https://images.unsplash.com/photo-1566204773863-cf63e6d4ab88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1345&q=100",
-    title: "Método de Sanação Assistida",
-    subtitle: "Aplicado a Atletas.",
-    excerpt: "O Método de Sanação Assistida é um Método criado por mim, onde incluo, em parte, diferentes técnicas que tenho vindo a aprender ao longo da minha carreira. É um trabalho realizado no inconsciente para curar crenças limitadoras...",
+    title: "Método de Sanación Asistida",
+    subtitle: "",
+    excerpt: "Creado a partir de diferentes técnicas que he ido aprendiendo a lo largo de mi trayectoria, este método consiste en trabajar en el inconsciente para sanar creencias limitantes (como por ejemplo el no sentirse merecedor, no sentirse valioso, creer que uno no puede), así como resolver conflictos con el dinero, de relaciones laborales, personales, de pareja. También trata dolores físicos, traumas, adicciones, estados de depresión, ansiedad, entre otros. Buscamos convertir las creencias instauradas en creencias potenciadoras que nos ayuden a vivir una vida feliz y en paz.",
+    img_src: image5,
   },
   {
-    src: "https://images.unsplash.com/photo-1558603668-6570496b66f8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1300&q=100",
-    title: "Método de Sanação Assistida",
+    title: "Sanación Asistida",
+    subtitle: "en Atletas de Alto Rendimiento",
+    excerpt: "Todos los atletas tienen una meta u objetivo. A través de este método, mi labor consiste en trabajar la concentración, focalizar en la templanza, instruir la mente para obtener mayor tranquilidad en los momentos más críticos.",
+    img_src: image1,
+  },
+  {
+    title: "Sanación Asistida",
     subtitle: "General",
-    excerpt: "Como descrevi no início da secção, a nossa mente está cheia de crenças que, em vez de suavizar o nosso caminho,  o torna mais dificil. Já  lhe aconteceu querer ganhar mais dinheiro e não sabe porque...",
+    excerpt: "Tratamos de encontrar el conflicto para sanarlo en el inconsciente, aplicando la canalización, don que descubrí hace algunos años y cada vez fue creciendo más y más. Muchas veces nos cuesta hablar o expresarnos y este método nos permite ver más allá e ir a la raíz del conflicto para poder sanar. En el caso de las dolencias físicas, el procedimiento es el mismo: luego de encontrar la raíz que ocasiona el dolor o la sintomatología, sbuscamos sanarla.",
+    img_src: image2,
   },
   {
-    src: "https://images.unsplash.com/photo-1567225557594-88d73e55f2cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=934&q=100",
-    title: "Limpeza Energética",
-    subtitle: "e Pêndulo Hebraico",
-    excerpt: "Muitas vezes, acontece algo na nossa vida em que começamos a sentir que as coisas estão estagnadas, que não fluem como gostaríamos, que nos deparamos com pessoas que não são muito positivas e atraímos situações ou pessoas que não gostamos.",
+    title: "Limpezas Energéticas",
+    subtitle: "y Péndulo Hebreo",
+    excerpt: " ¿Como darnos cuenta si necesitamos una limpieza energética? Muchas veces en la vida empezamos a sentir que las cosas se estancan, que no fluyen como nos gustarían, que nos vinculamos con gente que no es positiva y atraemos situaciones o personas que no nos agradan. Esto puede significar la necesidad de una limpieza energética, que realizada desde el amor y la experiencia, nos haga volver a sentirnos nosotros mismos, bien, y que logre hacer que todo fluya nuevamente.",
+    img_src: image3,
   },
   {
-    src: "https://images.unsplash.com/photo-1611145367651-6303b46e4040?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2006&q=100",
     title: "Registros",
     subtitle: "Akáshicos",
-    excerpt: " Como darnos cuenta si estamos necesitando una limpieza energética?    Muchas veces nos ha ocurrido que en nuestra vida empezamos a sentir que las cosas se estancan, que no fluyen como nos gustarían, que nos cruzamos con gente que no es muy positiva y atraemos situaciones o personas que no nos agradan.     Esto es parte de poder estar necesitando una limpieza energética, que realizada desde el amor y la experiencia la persona vuelve a sentirse en si misma, bien, y a que todo fluya nuevamente.",
+    excerpt: "Los Registros Akáshicos son una memoria universal de la existencia, y representan un espacio multidimensional dónde se “guardan” todas las experiencias del alma, que incluyen todos los conocimientos y  experiencias de las vidas pasadas, la vida presente y las potencialidades futuras. A través de una lectura de Registros Akáshicos podemos comprender la realidad de una manera mucho más profunda y sanadora.",
+    img_src: image4,
   },
 ];
 function GalleryItem({
-  src,
+  img_src,
   excerpt,
   subtitle,
   title,
@@ -64,7 +76,7 @@ function GalleryItem({
         </div>
         <div
           className="gallery-item-image"
-          style={{ backgroundImage: `url(${src})` }}
+          style={{ backgroundImage: `url(${img_src})` }}
         ></div>
       </div>
       <div></div>
@@ -72,7 +84,7 @@ function GalleryItem({
   );
 }
 
-export default function Gallery({ src, index, columnOffset }) {
+export default function Gallery({ img_src, index, columnOffset }) {
   const [activeImage, setActiveImage] = useState(1);
 
   const ref = useRef(null);

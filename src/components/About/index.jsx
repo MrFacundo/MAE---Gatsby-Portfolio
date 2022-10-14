@@ -4,12 +4,11 @@ import "./style.scss";
 import img1 from "../../images/IMG_9806.jpg";
 
 const Text = {
-  title: "Sobre mim",
-  paragraph1: `O meu nome é Maria Danai Eguiguren e vou-vos contar um pouco mais sobre mim, para quem não me conhece.
-  Nasci na Argentina no bairro portenõ de Recoleta onde fui criada, passei a minha infância e grande parte da minha vida.`,
-  paragraph2: `Deus, e também com muito interesse em conhecer mais pelo mundo holístico, a mente e com uma grande 
-  intuição e sabia que teria que fazer algo nesse sentido. Por outro lado também gostava de ouvir as pessoas que se aproximavam de mim com os seus 
-  problemas e me pediam ajuda e com muito amor lhes brindava palavras directas do meu coração para as ajudar.`,
+  title: "Sobre mí",
+  paragraph1: `Mi nombre es Maria Danai Eguiguren y me gustaría contarles un poco acerca de mi para los que no me conocen, puedan hacerlo. Nací en Argentina, en el barrio porteño de Recoleta donde me crié y pasé mi infancia y gran parte de mi vida.`,
+  paragraph2: `Mi vida, como la vida de millones de personas no fue una vida fácil a nivel emocional. Tuve que desaprender y re-aprender muchas cosas nuevas, deshacerme de creencias que me limitaban y no me dejaban ver con claridad y convertirlas en creencias potenciadoras que me ayuden a vivir una vida mas feliz y en paz.`,
+  paragraph3: `Todo este camino fue un camino maravilloso por el que yo transcurrí y caminé durante años hasta poder llegar hoy a donde estoy, y así sigo aprendiendo siempre y cada día mas, dando gracias por las vivencias que tuve, gracias por el aprendizaje.`,
+
 };
 
 const About = () => {
@@ -32,6 +31,8 @@ const About = () => {
         <p> {Text.paragraph1}</p>
         <br />
         <p> {Text.paragraph2}</p>
+        <br />
+        <p> {Text.paragraph3}</p>
       </div>
       <div className="right">
         <img

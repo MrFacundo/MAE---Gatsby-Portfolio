@@ -9,16 +9,21 @@ export default function Contact() {
     <section className="contact-section" data-scroll-section>
       <div className="left-column">
         <div className="section-title">
-          <h1>Contact me</h1>
+          <h1>Contactos</h1>
         </div>
         <div className="social-media">
           <div className="row">
-            <FaInstagram  />
-            <FaFacebook  />
-          </div>
-          <div className="row">
-            <FaLinkedin  />
-            <FaBeer  />
+            <span className="tooltip">
+              <FaInstagram />
+            </span>
+            <span className="tooltip">
+              <FaFacebook />
+              <span>Muy pronto!</span>
+            </span>
+            <span className="tooltip">
+              <FaLinkedin />
+              <span>Muy pronto!</span>
+            </span>
           </div>
         </div>
       </div>
@@ -39,8 +44,8 @@ export default function Contact() {
             </p>
           </div>
         </div>
-        <div className="form">Contact form</div>
-        <div className="links">links</div>
+        {/* <div className="form">Contact form</div>
+        <div className="links">links</div> */}
       </div>
     </section>
   );
