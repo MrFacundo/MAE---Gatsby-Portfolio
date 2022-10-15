@@ -7,7 +7,7 @@ import "../styles/home.scss";
 // import { StaticImage } from "gatsby-plugin-image";
 // import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 import Contact from "../components/Contact";
 import Hero from "../components/Hero";
 import Loader from "../components/Loader";
