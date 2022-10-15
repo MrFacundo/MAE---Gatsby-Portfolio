@@ -21,7 +21,7 @@ export default function Intro() {
       gsap.to(".intro-line", {
         duration: 3,
         opacity: 1,
-        stagger: 0.7,
+        stagger: 0.5,
         ease: "power4.out",
       });
     }
