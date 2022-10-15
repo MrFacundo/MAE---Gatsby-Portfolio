@@ -1,6 +1,8 @@
 import React from "react";
 
-import { FaInstagram, FaFacebook, FaLinkedin, FaBeer } from "react-icons/fa";
+// import { FaInstagram, FaFacebook, FaLinkedin, FaBeer } from "react-icons/fa";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBus, faCoins, faDice } from "@fortawesome/free-solid-svg-icons";
 
 import "./style.scss";
 
@@ -14,14 +16,14 @@ export default function Contact() {
         <div className="social-media">
           <div className="row">
             <span className="tooltip">
-              <FaInstagram />
+              <FontAwesomeIcon icon={faBus} />
             </span>
             <span className="tooltip">
-              <FaFacebook />
+              <FontAwesomeIcon icon={faCoins} />
               <span>Muy pronto!</span>
             </span>
             <span className="tooltip">
-              <FaLinkedin />
+              <FontAwesomeIcon icon={faDice} />
               <span>Muy pronto!</span>
             </span>
           </div>
