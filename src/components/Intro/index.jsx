@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import cn from "classnames";
 
 import gsap from "gsap";
 import useOnScreen from "../../hooks/useOnScreen";
@@ -20,7 +19,7 @@ export default function Intro() {
     if (reveal) {
 
       gsap.to(".intro-line", {
-        duration: 2,
+        duration: 3,
         opacity: 1,
         stagger: 0.7,
         ease: "power4.out",
@@ -35,6 +34,7 @@ export default function Intro() {
     >
       <p ref={ref} className="intro-text">
         <span className="intro-line">Hazte consciente,</span>
+        <br />
         <span className="intro-line">vive, </span>
         <span className="intro-line">trasciende. </span>
         <span className="intro-line">Conquista tus metas.</span>

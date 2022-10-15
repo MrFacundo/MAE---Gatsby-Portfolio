@@ -13,6 +13,7 @@
 }
 
 .contact-container {
+  width: 90%;
   height: 100%;
   display: grid;
   grid-auto-rows: minmax(0, 1fr);
@@ -41,10 +42,12 @@
 }
 
 .left-column {
-  width: 90%;
+  width: 80%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   @media (min-width: $lg) {
+    width: 90%;
     display: block;
     width: 20%;
   }
@@ -66,7 +69,8 @@
   flex-direction: row;
   height: 70%;
   width: 50%;
-  // align-items: center;
+  margin-top: 2rem;
+  margin-left: -10px;
 
   @media (min-width: $lg) {
     padding-top: 27%;
@@ -89,7 +93,7 @@
 
 .tooltip:hover span {
   opacity: 1;
-  top: -8rem;
+  top: -5rem;
   left: 0.5rem;
   z-index: 99;
   transition: all 0.5s ease;
@@ -104,7 +108,7 @@
   font-weight: normal;
   line-height: 1.5em;
   padding: 16px 15px;
-  top: -5em; /*-- this is the original position of the tooltip when it's hidden */
+  top: -3rem; /*-- this is the original position of the tooltip when it's hidden */
   left: 0.5rem;
   margin-left: 0;
   opacity: 0;

@@ -1,30 +1,28 @@
 @import "../../styles/_variables.scss";
 
-.about {
+.about-section {
   background-color: $tertiary;
+  width: 100vw;
+
   min-height: 150vh;
   display: flex;
   margin: 0 auto;
-  @media (max-width: 48em) {
-    width: 90vw;
+  @media (min-width: $lg)  {
+    min-height: 120vh;
   }
-  @media (max-width: 30em) {
-    width: 100vw;
-  }
-  color: $onyx;
 
+  color: $onyx;
 }
 
-.title {
+.about__title {
   font-family: $didactic;
   font-weight: 600;
   font-size: 3rem;
   position: absolute;
   z-index: 5;
-  top: 3%;
+  top: 5%;
   left: 0;
-  
-  
+
   @media (min-width: $lg) {
     top: 10%;
     left: 5%;
@@ -33,19 +31,21 @@
   }
 }
 
-.left {
+.about__text {
   width: 80%;
   position: absolute;
-  top: 44%;
+  // top: 70%;
+  // left: 50%;
+  top: 50%;
+  left: 10%;
   backdrop-filter: blur(2px);
   border-radius: 20px;
-  @media (max-width: 64em) {
-    margin: 0 auto;
-    transform: translate(-50%, -50%) !important;
-    left: 50%;
-  }
+  font-size: 1.3rem;
+  margin: 0 auto;
 
   @media (min-width: $lg) {
+    transform: none;
+    left: auto;
     width: 33%;
     position: relative;
     z-index: 5;
@@ -57,31 +57,23 @@
   }
 }
 
-.right {
+.about__image {
   width: 50%;
   position: relative;
   text-align: -webkit-right;
 
-  .small-img-2 {
-    height: auto;
-    width: 55%;
+  .about_image-1 {
     position: absolute;
-    left: 30%;
-    bottom: 25%;
-  }
+    top: 7%;
+    left: 27%;
+    width: 70vw;
+    box-shadow: $box-shadow;
 
-  @media (max-width: 64em) {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .small-img-2 {
-      object-fit: cover;
-      height: 100vh;
-      width: 30%;
+    @media (min-width: $lg) {
       height: auto;
-      left: 60%;
-      bottom: 20%;
+      width: 55%;
+      left: 30%;
+      bottom: 25%;
     }
   }
 }

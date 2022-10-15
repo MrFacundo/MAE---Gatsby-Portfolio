@@ -49,8 +49,8 @@
       opacity: 0;
       text-align: center;
 
-
       &.one {
+        font-size: 1.5rem;
         @media (min-width: $lg) {
           font-size: 3rem;
           padding-right: 10rem;
@@ -58,6 +58,7 @@
         }
       }
       &.two {
+        font-size: 3rem;
         padding-top: 2rem;
         @media (min-width: $lg) {
           font-size: 6rem;
@@ -66,6 +67,7 @@
         }
       }
       &.three {
+        font-size: 3rem;
         padding-top: 2rem;
         @media (min-width: $lg) {
           font-size: 6rem;

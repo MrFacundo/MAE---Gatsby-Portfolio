@@ -3,20 +3,23 @@
 .intro-section {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+  height: 70vh;
   @media (min-width: $lg) {
+    justify-content: center;
     height: 60vh;
     padding: 100px 15% 0;
   }
   .intro-text {
-    text-align: center;
-    font-size: 30px;
-    line-height: 1.12;
+    max-width: 60%;
+    font-size: 3rem;
+    line-height: 5rem;
     margin: 0 50px;
     color: $onyx;
     @media (min-width: $lg) {
-      font-size: 6rem;
+      text-align: center;
+      max-width: 100%;
+     font-size: 6rem;
+     line-height: 7rem;
     }
     .intro-line {
       font-family: "Didact Gothic", sans-serif;
