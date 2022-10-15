@@ -13,7 +13,6 @@ export default function Contact() {
         <div className="section-title">
           <h1>Contactos</h1>
         </div>
-        <div className="social-media">
           <div className="row">
             <span className="tooltip">
               <FontAwesomeIcon icon={faBus} />
@@ -27,7 +26,6 @@ export default function Contact() {
               <span>Muy pronto!</span>
             </span>
           </div>
-        </div>
       </div>
       <div className="contact-container">
         <div className="contact">
