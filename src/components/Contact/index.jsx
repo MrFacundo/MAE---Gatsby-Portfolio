@@ -3,6 +3,7 @@ import React from "react";
 // import { FaInstagram, FaFacebook, FaLinkedin, FaBeer } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faFacebook, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import logo from "../../images/logo2primary.png";
 
 import "./style.scss";
 
@@ -54,6 +55,7 @@ export default function Contact() {
         {/* <div className="form">Contact form</div>
         <div className="links">links</div> */}
       </div>
+      <img className="contact__logo" src={logo} alt="" />
     </section>
   );
 }

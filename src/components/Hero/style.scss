@@ -26,13 +26,12 @@
     text-transform: uppercase;
     font-weight: 400;
 
-    height: 60vh;
+    height: 80vh;
     flex-direction: column;
     display: flex;
     place-content: space-between;
     top: 44%;
     @media (min-width: $lg) {
-      height: 80vh;
       width: 40vw;
     }
     .top {
@@ -90,4 +89,8 @@
   .lineChildren {
     transform: translate(0, 500px);
   }
+}
+.hero__logo {
+  width: 170px;
+  opacity: 0;
 }

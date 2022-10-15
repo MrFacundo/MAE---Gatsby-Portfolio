@@ -32,7 +32,7 @@ const Home = () => {
     }
   }, [preloader]);
 
-  const [timer, setTimer] = React.useState(2);
+  const [timer, setTimer] = React.useState(3);
 
   const id = React.useRef(null);
 

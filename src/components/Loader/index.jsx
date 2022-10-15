@@ -9,7 +9,7 @@ export default function Loader() {
     let ctx = gsap.context(() => {
       gsap.to("#container", { opacity: 1, duration: 0.5 });
       gsap.to("#container", { scale: 1, duration: 1 });
-      gsap.to("#overlay", { opacity: 1, delay: 1, duration: 1 });
+      gsap.to("#overlay", { opacity: 1, delay: 1, duration: 2 });
     }, loader);
 
     return () => ctx.revert();

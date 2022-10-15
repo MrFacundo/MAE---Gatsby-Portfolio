@@ -52,12 +52,12 @@
   }
 
   .gallery-item-info {
-    height: 90%;
+    height: 85%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    top: 4%;
+    top: 7%;
     z-index: 1;
     transform: translateX(-20%);
     color: $onyx;

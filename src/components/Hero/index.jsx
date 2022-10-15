@@ -2,17 +2,24 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { useMediaQuery } from 'react-responsive'
 
+import logo from "../../images/logo2primary.png";
+
+
 import "./style.scss";
 
 export default function Hero() {
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
 
   const app = useRef();
+  const tl = useRef();
+
 
   useEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.to(".top", { opacity: 1, duration: 2.5 });
-      gsap.to(".line",{ opacity: 1, duration: 2, delay: 0.7  });
+      tl.current = gsap.timeline()
+      .to(".top", { opacity: 1, duration: 2 })
+      .to(".line",{ opacity: 1, duration: 2}, 1)
+      .to(".hero__logo",{ opacity: 1, duration: 2}, 2)
     }, app);
 
     return () => ctx.revert();
@@ -49,6 +56,7 @@ export default function Hero() {
             >
                Asistida
             </h2>
+            <img className="hero__logo" src={logo} alt="" />
           </div>
         </div>
       </section>
