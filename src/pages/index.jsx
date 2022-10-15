@@ -2,9 +2,17 @@ import React from "react";
 import Loadable from "react-loadable";
 const loader = () => <div>Loading.</div>;
 
+export function Head() {
+  return (
+    <>
+      <title>Maria Danai Eguiguren - Método de Sanación Asistida</title>
+      <meta name="description" content="Maria Danai Eguiguren - Método de Sanación Asistida" />
+    </>
+  );
+}
 
 const HomeLazy = Loadable({
-  loader: () => import("../home/Home"), 
+  loader: () => import("../home/Home"),
   loading: loader,
 });
 
