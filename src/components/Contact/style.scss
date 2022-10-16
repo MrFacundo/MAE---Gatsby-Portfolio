@@ -121,18 +121,20 @@
 }
 
 .contact__logo {
-  width: 170px;
-  margin-top: 3rem;
-  @media (min-width: $lg) {
-    margin-top: 0;
-
+  text-align: center;
+  .contact__logo-text {
+    font-family: $baiJamjuree;
+    padding-top: 8px;
+    @media (min-width: $lg) {
+      margin-top: 0;
+    }
   }
-}
-.contact__logo-text {
-  font-family: $baiJamjuree;
-  padding-top: 8px;
-  @media (min-width: $lg) {
-    margin-top: 0;
 
+  .contact__logo-img {
+    width: 170px;
+    margin-top: 3rem;
+    @media (min-width: $lg) {
+      margin-top: 0;
+    }
   }
 }

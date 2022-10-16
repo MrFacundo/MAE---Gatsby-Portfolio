@@ -15,6 +15,8 @@ body {
 .main-container {
   backface-visibility: hidden;
     overflow: hidden;
+    overflow-x: scroll; /* Must be 'scroll' not 'auto' */
+    -webkit-overflow-scrolling: touch;
 
 }
 
