@@ -7,15 +7,16 @@
   justify-content: center;
   flex-direction: column;
   transition: "all 0.25s ease-in-out";
-  background-image: url("../../images/IMG_9808_mobile.jpg");
+  background-image: url("../../images/IMG_9808_mobile2.jpg");
   transform: scale(1.2);
-  @media (min-width: $lg) {
-    background-image: url("../../images/IMG_9808.jpg");
-  }
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position-y: center;
   background-position-x: center;
+  @media (min-width: $lg) {
+    background-size: cover;
+    background-image: url("../../images/IMG_9808.jpg");
+  }
 
   h1 {
     font-size: 1.5vw;
@@ -34,10 +35,32 @@
 
 #overlay {
   opacity: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 2;
   width: 100%;
   height: 100%;
+}
+
+.overlay-overlay {
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .up {
+    background-color: $primary;
+    width: 100%;
+    height: 7%;
+  }
+  .down {
+    background-color: $primary;
+    width: 100%;
+    height: 7%;
+    position: absolute;
+    bottom: 0;
+  }
+  @media (min-width: $lg) {
+    display: none;
+  }
 }
 
 
