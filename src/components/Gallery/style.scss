@@ -79,11 +79,16 @@
 
     }
     .gallery-info-title {
-      line-height: 3rem;
+      line-height: 2rem;
       font-family: $didactic;
       font-weight: 600;
-      font-size: 3rem;
+      font-size: 2rem;
       -webkit-font-smoothing: antialiased;
+
+      @media (min-width: $sm) {
+        line-height: 3rem;
+        font-size: 3rem;
+      }
 
       @media (min-width: $lg) {
         line-height: 5rem;
@@ -92,14 +97,20 @@
     }
 
     .gallery-info-subtitle {
-      line-height: 3rem;
-      font-size: 3rem;
+      line-height: 2rem;
+      font-size: 2rem;
       position: relative;
       color: transparent;
       font-family: "Bodoni Moda";
       font-weight: 400;
       -webkit-font-smoothing: antialiased;
       -webkit-text-stroke: 2px $tertiary;
+
+      @media (min-width: $sm) {
+        line-height: 3rem;
+        font-size: 3rem;
+      }
+
       @media (min-width: $lg) {
         line-height: 5rem;
         font-size: 5rem;
@@ -150,13 +161,15 @@
     transform: scale(0.7);
     transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
     filter: grayscale(100%) sepia(20%) brightness(80%);
-
     position: absolute;
     right: 0;
     left: 0;
     top: 30%;
     height: 30%;
     box-shadow: $box-shadow;
+    @media (min-width: $sm) {
+      top: 33%;
+    }
     @media (min-width: $lg) {
       width: 45%;
       height: 80%;

@@ -10,6 +10,8 @@ import image2 from "../../images/general.jpg";
 import image3 from "../../images/limpiezas.jpg";
 import image4 from "../../images/registros.jpg";
 import image5 from "../../images/metodo.jpg";
+import image6 from "../../images/atletas_mobile.jpg";
+
 
 import "./style.scss";
 
@@ -31,7 +33,7 @@ const gallery_items = [
       "Todos los atletas tienen una meta u objetivo. A través de este método, mi labor consiste en trabajar la concentración, focalizar en la templanza, instruir la mente para obtener mayor tranquilidad en los momentos más críticos.",
     excerpt_mobile:
       "A través del Método de Sanación Asistida buscamos trabajar la concentración, focalizarnos en la templanza e instruir la mente para obtener mayor tranquilidad en los momentos más críticos",
-    img_src: image1,
+    img_src: image6,
   },
   {
     title: "Sanación Asistida",
@@ -39,7 +41,7 @@ const gallery_items = [
     excerpt:
       "Tratamos de encontrar el conflicto para sanarlo en el inconsciente, aplicando la canalización, don que descubrí hace algunos años y cada vez fue creciendo más y más. Muchas veces nos cuesta hablar o expresarnos y este método nos permite ver más allá e ir a la raíz del conflicto para poder sanar. En el caso de las dolencias físicas, el procedimiento es el mismo: luego de encontrar la raíz que ocasiona el dolor o la sintomatología, sbuscamos sanarla.",
     excerpt_mobile:
-      "Mi foco es la raíz del conflicto para sanarlo en el inconsciente, aplicando la canalización, don que descubrí hace algunos años. Cuando encontramos la raíz que ocasiona el dolor o sintomatología, se sana.",
+      "Aquí, me enfoco a encontrar el conflicto para sanarlo en el inconsciente, aplicando la canalización, don que descubrí hace algunos años.  Cuando encontramos la raíz que ocasiona el dolor o sintomatología, se sana.",
     img_src: image2,
   },
   {
