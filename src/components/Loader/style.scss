@@ -9,10 +9,10 @@
   justify-content: center;
   flex-direction: column;
   transition: "all 0.25s ease-in-out";
-  background-image: url("../../images/IMG_9808_mobile2.jpg");
+  background-image: url("../../images/IMG_9808_mobile3.jpg");
   transform: scale(1.2);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position-y: center;
   background-position-x: center;
   @media (min-width: $lg) {
