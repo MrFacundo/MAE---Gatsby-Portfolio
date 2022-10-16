@@ -57,7 +57,7 @@ const gallery_items = [
     excerpt:
       "Los Registros Akáshicos son una memoria universal de la existencia. Representan un espacio multidimensional dónde se “guardan” todas las experiencias del alma, que incluyen todos los conocimientos y experiencias de las vidas pasadas, la vida presente y las potencialidades futuras. A través de una lectura de Registros Akáshicos podemos comprender la realidad de una manera mucho más profunda y sanadora.",
     excerpt_mobile:
-      "Los Registros Akáshicos son una memoria universal de la existencia. Representan un espacio dónde se “guardan” todas las experiencias y conocimientos del alma, de las vidas pasadas, la presente y las potencialidades futuras. A través de los registros akáshicos lectura podemos comprender la realidad de una manera profunda y sanadora.",
+      "Los Registros Akáshicos son una memoria universal de la existencia. Representan un espacio dónde se “guardan” todas las experiencias y conocimientos del alma. A través de su lectura podemos comprender la realidad de una manera profunda y sanadora.",
     img_src: image4,
   },
 ];
