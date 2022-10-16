@@ -3,7 +3,7 @@
 .hero-container {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 800px;
   padding: 0;
   background-image: url("../../images/IMG_9808_mobile3.jpg");
   background-repeat: no-repeat;
@@ -12,6 +12,7 @@
   background-position-x: center;
   color: $primary;
   @media (min-width: $lg) {
+    height: 100vh;
     background-size: cover;
     background-image: url("../../images/IMG_9808.jpg");
   }
@@ -26,13 +27,14 @@
     font-family: $syncopate;
     text-transform: uppercase;
     font-weight: 400;
-
-    height: 80vh;
+    height: 80%;
     flex-direction: column;
     display: flex;
     place-content: space-between;
     top: 47%;
     @media (min-width: $lg) {
+      height: 80vh;
+
       width: 40vw;
     }
     .top {

@@ -12,6 +12,10 @@ body {
   overflow: hidden;
 }
 
+html {
+  height: -webkit-fill-available;
+}
+
 .main-container {
   backface-visibility: hidden;
     overflow: hidden;
