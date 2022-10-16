@@ -10,6 +10,8 @@ import Intro from "../components/Intro";
 import Gallery from "../components/Gallery";
 import About from "../components/About";
 import Footer from "../components/Footer";
+import ScrollButton from "../components/ScrollButton";
+
 
 import useLocoScroll from "../hooks/useLocoScroll";
 
@@ -65,6 +67,7 @@ const Home = () => {
           ref={ref}
         >
           {/* <Navbar /> */}
+          <ScrollButton />
           <Hero />
           {/* <img src={logo} alt="Logo" /> */}
 
