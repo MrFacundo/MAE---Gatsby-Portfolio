@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { useRef } from "react";
-
+// import { useScrollPositions } from "../hooks/useScrollPositions";
 import "../styles/home.scss";
 import Contact from "../components/Contact";
 import Hero from "../components/Hero";
@@ -10,10 +10,15 @@ import Intro from "../components/Intro";
 import Gallery from "../components/Gallery";
 import About from "../components/About";
 import Footer from "../components/Footer";
+import ScrollAnimation from "../components/ScrollAnimation";
 
 import useLocoScroll from "../hooks/useLocoScroll";
 
 const Home = () => {
+
+  // const { scrollX, scrollY } = useScrollPositions();
+  // console.log(scrollY);
+
   const ref = useRef(null);
   const [preloader, setPreload] = useState(true);
 
@@ -65,6 +70,7 @@ const Home = () => {
           ref={ref}
         >
           {/* <Navbar /> */}
+          <ScrollAnimation />
           <Hero />
           {/* <img src={logo} alt="Logo" /> */}
 

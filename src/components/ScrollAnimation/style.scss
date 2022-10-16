@@ -1,0 +1,73 @@
+@import "../../styles/_variables.scss";
+
+#mouse-scroll {
+  position: absolute;
+  top: 50vh;
+  right: 0vw;
+  transform: translate( -50%, -50% );
+  z-index: 5;
+  @media (min-width: $lg) {
+    display: none;
+  }
+  #mouse {
+    border: 2px solid $secondary;
+    height: 45px;
+    width: 25px;
+    border-radius: 20px;
+    &:after {
+      content: '';
+      height: 6px;
+      width: 4px;
+      background-color: $secondary;
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      top: 40%;
+      transform: translate( -50%, -50% );
+      animation: mouse 1.2s infinite;
+    }
+  }
+  .scroll-bars {
+      $barSize: 13px;
+      position: absolute;
+      top: calc( 100% + #{$barSize} + 5px );
+      left: 50%;
+      transform: translate( -50%, -50% );
+    .scroll-bar {
+      height: $barSize;
+      width: $barSize;
+      border-color: $secondary;
+      border-width: 0 0 2px 2px;
+      border-style: solid;
+      transform:  rotate( -45deg );
+      animation: arrow 1s infinite;
+      &:not(:first-child) {
+        margin-top: -5px;
+      }
+      @for $i from 1 through 3 {
+        &:nth-child(#{$i}) {
+          animation-delay: calc( .2s * #{$i} );
+        }
+      }
+    }
+  }
+}
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes mouse {
+  0% {
+    top: 20%;
+  }
+  90% {
+    top: 40%;
+  }
+  100% {
+    top: 20%;
+  }
+}

@@ -17,11 +17,11 @@ html {
 }
 
 .main-container {
+  position: relative;
   backface-visibility: hidden;
-    overflow: hidden;
-    overflow-x: scroll; /* Must be 'scroll' not 'auto' */
-    -webkit-overflow-scrolling: touch;
-
+  overflow: hidden;
+  overflow-x: scroll; /* Must be 'scroll' not 'auto' */
+  -webkit-overflow-scrolling: touch;
 }
 
 section {
@@ -38,7 +38,10 @@ section {
   right: 0;
   z-index: 1;
 }
-a, a:hover, a:focus, a:active {
+a,
+a:hover,
+a:focus,
+a:active {
   border: none;
   text-decoration: none;
   color: inherit;

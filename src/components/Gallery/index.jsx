@@ -25,6 +25,7 @@ const gallery_items = [
       "Creado a partir de diferentes técnicas que he ido aprendiendo a lo largo de mi trayectoria, este método consiste en trabajar desde inconsciente para sanar creencias limitantes y convertirlas en creencias potenciadoras que nos ayuden a vivir una vida feliz y en paz.",
 
     img_src: image5,
+    img_src_mobile: "",
   },
   {
     title: "Sanación",
@@ -33,7 +34,9 @@ const gallery_items = [
       "Todos los atletas tienen una meta u objetivo. A través de este método, mi labor consiste en trabajar la concentración, focalizar en la templanza, instruir la mente para obtener mayor tranquilidad en los momentos más críticos.",
     excerpt_mobile:
       "A través del Método de Sanación Asistida buscamos trabajar la concentración, focalizarnos en la templanza e instruir la mente para obtener mayor tranquilidad en los momentos más críticos",
-    img_src: image6,
+    img_src: image1,
+    img_src_mobile: image6,
+
   },
   {
     title: "Sanación Asistida",
@@ -43,6 +46,7 @@ const gallery_items = [
     excerpt_mobile:
       "Aquí, me enfoco a encontrar el conflicto para sanarlo en el inconsciente, aplicando la canalización, don que descubrí hace algunos años.  Cuando encontramos la raíz que ocasiona el dolor o sintomatología, se sana.",
     img_src: image2,
+    img_src_mobile: "",
   },
   {
     title: "Limpezas Energéticas",
@@ -52,6 +56,7 @@ const gallery_items = [
     excerpt_mobile:
       "Muchas veces nos ocurre que empezamos a sentir que las cosas se estancan, que no fluyen como nos gustarían. Es aquí cuando necesitamos una limpieza energética para volver a sentirnos nosotros mismos.",
     img_src: image3,
+    img_src_mobile: "",
   },
   {
     title: "Registros",
@@ -61,10 +66,12 @@ const gallery_items = [
     excerpt_mobile:
       "Los Registros Akáshicos son una memoria universal de la existencia. Representan un espacio dónde se “guardan” todas las experiencias y conocimientos del alma. A través de su lectura podemos comprender la realidad de una manera profunda y sanadora.",
     img_src: image4,
+    img_src_mobile: "",
   },
 ];
 function GalleryItem({
   img_src,
+  img_src_mobile,
   excerpt,
   excerpt_mobile,
   subtitle,
@@ -101,7 +108,7 @@ function GalleryItem({
         </div>
         <div
           className="gallery-item-image"
-          style={{ backgroundImage: `url(${img_src})` }}
+          style={{ backgroundImage: isMobile && img_src_mobile ? `url(${img_src_mobile})` : `url(${img_src})`}}
         ></div>
       </div>
       <div></div>
