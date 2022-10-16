@@ -104,7 +104,7 @@
   border-radius: 15%;
   background: $onyx; /*-- some basic styling */
   color: $primary;
-  font-family: "Helvetica";
+  font-family: $didactic;
   font-size: 0.8em;
   font-weight: normal;
   line-height: 1.5em;
@@ -123,6 +123,14 @@
 .contact__logo {
   width: 170px;
   margin-top: 3rem;
+  @media (min-width: $lg) {
+    margin-top: 0;
+
+  }
+}
+.contact__logo-text {
+  font-family: $baiJamjuree;
+  padding-top: 8px;
   @media (min-width: $lg) {
     margin-top: 0;
 

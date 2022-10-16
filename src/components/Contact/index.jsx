@@ -58,6 +58,7 @@ export default function Contact() {
         <div className="links">links</div> */}
       </div>
       <img className="contact__logo" src={logo} alt="" />
+      <p className="contact__logo-text">Sanación Asistida</p>
     </section>
   );
 }
