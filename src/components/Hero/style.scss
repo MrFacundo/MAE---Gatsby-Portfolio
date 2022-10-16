@@ -27,11 +27,11 @@
     text-transform: uppercase;
     font-weight: 400;
 
-    height: 75vh;
+    height: 80vh;
     flex-direction: column;
     display: flex;
     place-content: space-between;
-    top: 47%;
+    top: 50%;
     @media (min-width: $lg) {
       width: 40vw;
     }
@@ -50,7 +50,7 @@
       text-align: center;
 
       &.one {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         @media (min-width: $lg) {
           font-size: 3rem;
           padding-right: 16rem;
@@ -58,7 +58,7 @@
         }
       }
       &.two {
-        font-size: 3rem;
+        font-size: 2rem;
         padding-top: 2rem;
         @media (min-width: $lg) {
           font-size: 6rem;
@@ -67,7 +67,7 @@
         }
       }
       &.three {
-        font-size: 3rem;
+        font-size: 2rem;
         padding-top: 2rem;
         @media (min-width: $lg) {
           font-size: 6rem;
@@ -114,6 +114,6 @@
   }
 }
 .hero__logo {
-  width: 170px;
+  width: 130px;
   opacity: 0;
 }
