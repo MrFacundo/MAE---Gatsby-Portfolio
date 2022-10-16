@@ -38,7 +38,7 @@ const About = () => {
       <div className="about__image">
         <img
           data-scroll
-          data-scroll-speed={isMobile ? 0.2 : -1.5}
+          data-scroll-speed={isMobile ? 0.1 : -1.5}
           data-scroll-target="#fixed-target"
           src={img1}
           alt="About Us"

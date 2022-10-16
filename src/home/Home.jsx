@@ -3,11 +3,6 @@ import { useEffect } from "react";
 import { useRef } from "react";
 
 import "../styles/home.scss";
-// import logo from "../images/IMG_9808.jpg"
-// import { StaticImage } from "gatsby-plugin-image";
-// import { GatsbyImage, getImage } from "gatsby-plugin-image"
-
-// import Navbar from "../components/Navbar";
 import Contact from "../components/Contact";
 import Hero from "../components/Hero";
 import Loader from "../components/Loader";
