@@ -2,7 +2,11 @@ import React from "react";
 
 // import { FaInstagram, FaFacebook, FaLinkedin, FaBeer } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faFacebook, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import {
+  faInstagram,
+  faFacebook,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 import logo from "../../images/logo2primary.png";
 
 import "./style.scss";
@@ -42,14 +46,12 @@ export default function Contact() {
             <p className="email-content">info@mariadanaieguiguren.com</p>
           </div>
           <div className="phone">
-            <span className="phone-title">Phone: </span>
+            <span className="phone-title">Teléfono </span>
             <p className="phone-content">+351 913 547 520</p>
           </div>
           <div className="address">
-            <span className="address-title">Address: </span>
-            <p className="address-content">
-              Amager Strandvej 112G 5. tv 2300 København S CVR: 34106185
-            </p>
+            <span className="address-title">Dirección: </span>
+            <p className="address-content">Paço de Arcos, Lisboa</p>
           </div>
         </div>
         {/* <div className="form">Contact form</div>

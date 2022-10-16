@@ -18,7 +18,11 @@ export default function Loader() {
   return (
     <div ref={loader}>
       <div id="container" className="loader-container absolute">
-      <div id="overlay" className="overlay absolute"></div>
+        <div id="overlay" className="overlay absolute"></div>
+        <div className="overlay-overlay absolute">
+          <div className="up"></div>
+          <div className="down"> </div>
+        </div>
       </div>
     </div>
   );
