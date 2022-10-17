@@ -17,8 +17,8 @@ export default function Hero() {
       tl.current = gsap
         .timeline()
         .to(".top", { opacity: 1, duration: 2 })
-        .to(".line", { opacity: 1, duration: 2 }, 1)
-        .to(".hero__logo", { opacity: 1, duration: 2 }, 2);
+        .to(".line", { opacity: 1, duration: 2 }, 0.75)
+        .to(".hero__logo", { opacity: 1, duration: 2 }, 1.5);
     }, app);
 
     return () => ctx.revert();
