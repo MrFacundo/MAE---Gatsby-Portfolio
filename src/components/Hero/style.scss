@@ -120,4 +120,7 @@
 .hero__logo {
   width: 130px;
   opacity: 0;
+  @media (min-width: $lg) {
+    width: 160px;
+  }
 }
