@@ -1,21 +1,19 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
-import { useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
+
 // import { useScrollPositions } from "../hooks/useScrollPositions";
 import "../styles/home.scss";
+
 import Contact from "../components/Contact";
 import Hero from "../components/Hero";
 import Loader from "../components/Loader";
 import Intro from "../components/Intro";
 import Gallery from "../components/Gallery";
 import GalleryMobile from "../components/GalleryMobile";
-
 import About from "../components/About";
 import Footer from "../components/Footer";
 // import ScrollAnimation from "../components/ScrollAnimation";
 
 import useLocoScroll from "../hooks/useLocoScroll";
-
 import cn from "classnames";
 import { BrowserView, MobileView, isIOS } from "react-device-detect";
 
@@ -59,14 +57,6 @@ const Home = () => {
     return null;
   }
 
-  // if (!preloader) {
-  //   locoScroll.on('scroll', ({ limit, scroll }) => {
-  //     const progress = scroll.y / limit.y * 100
-
-  //     console.log(progress);
-  //   })
-  // }
-
   return (
     <>
       {preloader ? (
@@ -81,8 +71,6 @@ const Home = () => {
           {/* <Navbar /> */}
           {/* <ScrollAnimation /> */}
           <Hero />
-          {/* <img src={logo} alt="Logo" /> */}
-
           {/* <Featured /> */}
           <Intro />
           <MobileView>
