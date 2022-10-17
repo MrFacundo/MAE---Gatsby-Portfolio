@@ -20,8 +20,10 @@ html {
   position: relative;
   backface-visibility: hidden;
   overflow: hidden;
-  overflow-x: scroll; /* Must be 'scroll' not 'auto' */
+  .ios-overflow{
+   overflow-x: scroll; /* Must be 'scroll' not 'auto' */
   -webkit-overflow-scrolling: touch;
+  }
 }
 
 section {

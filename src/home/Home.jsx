@@ -14,10 +14,10 @@ import ScrollAnimation from "../components/ScrollAnimation";
 
 import useLocoScroll from "../hooks/useLocoScroll";
 
-const Home = () => {
+import cn from "classnames";
+import { isIOS } from "react-device-detect";
 
-  // const { scrollX, scrollY } = useScrollPositions();
-  // console.log(scrollY);
+const Home = () => {
 
   const ref = useRef(null);
   const [preloader, setPreload] = useState(true);
@@ -32,23 +32,23 @@ const Home = () => {
     }
   }, [preloader]);
 
-  const [timer, setTimer] = React.useState(3);
+  const [timer, setTimer] = useState(3);
 
-  const id = React.useRef(null);
+  const id = useRef(null);
 
   const clear = () => {
     window.clearInterval(id.current);
     setPreload(false);
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     id.current = window.setInterval(() => {
       setTimer((time) => time - 1);
     }, 1000);
     return () => clear();
   }, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (timer === 0) {
       clear();
     }
@@ -58,13 +58,21 @@ const Home = () => {
     return null;
   }
 
+  // if (!preloader) {
+  //   locoScroll.on('scroll', ({ limit, scroll }) => {
+  //     const progress = scroll.y / limit.y * 100
+    
+  //     console.log(progress);
+  //   })
+  // }
+
   return (
     <>
       {preloader ? (
         <Loader />
       ) : (
         <div
-          className="main-container"
+          className={cn("main-container", { "ios-overflow": isIOS })}
           id="main-container"
           data-scroll-container
           ref={ref}

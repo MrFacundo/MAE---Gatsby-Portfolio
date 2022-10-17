@@ -7,6 +7,7 @@ import "locomotive-scroll/src/locomotive-scroll.scss";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function useLocoScroll(start) {
+  
   useEffect(() => {
     
     if (typeof window === "undefined" || !window.document) {
@@ -29,7 +30,10 @@ export default function useLocoScroll(start) {
       class: "is-reveal",
     });
 
-    locoScroll.on("scroll", () => {
+    locoScroll.on("scroll", ({ scroll }) => {
+      var scrolly = scroll.y
+      console.log(scrolly);
+
       ScrollTrigger.update();
     });
 
