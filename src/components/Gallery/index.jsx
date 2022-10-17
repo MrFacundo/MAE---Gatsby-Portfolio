@@ -6,8 +6,6 @@ import gallery_items from "../../data"
 
 import "./style.scss";
 
-
-
 export default function Gallery() {
   const [activeItem, setActiveImage] = useState(1);
 
@@ -39,25 +37,10 @@ export default function Gallery() {
     setActiveImage(index + 1);
   };
 
-  const [windowSize, setWindowSize] = useState(getWindowSize());
-
-  useEffect(() => {
-    function handleWindowResize() {
-      setWindowSize(getWindowSize());
-    }
-
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
-
   return (
     <section data-scroll-section className="section-wrapper gallery-wrap">
       <div
         className="gallery"
-        style={{ height: (0.9 * windowSize.innerHeight)  }}
         ref={ref}
       >
         <div className="gallery-counter">
@@ -76,9 +59,4 @@ export default function Gallery() {
       </div>
     </section>
   );
-}
-
-function getWindowSize() {
-  const { innerWidth, innerHeight } = window;
-  return { innerWidth, innerHeight };
 }

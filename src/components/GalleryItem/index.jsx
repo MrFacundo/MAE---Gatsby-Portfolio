@@ -1,23 +1,18 @@
 import React, { useEffect, useRef } from "react";
 import useOnScreen from "../../hooks/useOnScreen";
 import cn from "classnames";
-import { useMediaQuery } from "react-responsive";
 import "./style.scss";
 
 
 export default function GalleryItem({
     img_src,
-    img_src_mobile,
     excerpt,
-    excerpt_mobile,
     subtitle,
     title,
     updateActiveItem,
     index,
   }) {
-    const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
     const ref = useRef(null);
-    // console.log(useWindowSize)
     const onScreen = useOnScreen(ref, 0.5);
   
     useEffect(() => {
@@ -39,12 +34,12 @@ export default function GalleryItem({
               <h2 className="gallery-info-subtitle">{subtitle}</h2>
             </div>
             <p className="gallery-info-excerpt">
-              {isMobile ? excerpt_mobile : excerpt}
+              {excerpt}
             </p>
           </div>
           <div
             className="gallery-item-image"
-            style={{ backgroundImage: isMobile && img_src_mobile ? `url(${img_src_mobile})` : `url(${img_src})`}}
+            style={{ backgroundImage: `url(${img_src})`}}
           ></div>
         </div>
         <div></div>
