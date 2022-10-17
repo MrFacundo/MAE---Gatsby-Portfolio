@@ -44,7 +44,7 @@ const gallery_items = [
     excerpt:
       "Tratamos de encontrar el conflicto para sanarlo en el inconsciente, aplicando la canalización, don que descubrí hace algunos años y cada vez fue creciendo más y más. Muchas veces nos cuesta hablar o expresarnos y este método nos permite ver más allá e ir a la raíz del conflicto para poder sanar. En el caso de las dolencias físicas, el procedimiento es el mismo: luego de encontrar la raíz que ocasiona el dolor o la sintomatología, sbuscamos sanarla.",
     excerpt_mobile:
-      "Aquí, me enfoco a encontrar el conflicto para sanarlo en el inconsciente, aplicando la canalización, don que descubrí hace algunos años.  Cuando encontramos la raíz que ocasiona el dolor o sintomatología, se sana.",
+      "Aquí, me enfoco en encontrar el conflicto para sanarlo en el inconsciente, aplicando la canalización, don que descubrí hace algunos años.  Cuando encontramos la raíz que ocasiona el dolor o sintomatología, se sana.",
     img_src: image2,
     img_src_mobile: "",
   },
