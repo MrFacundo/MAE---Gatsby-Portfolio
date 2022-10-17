@@ -44,7 +44,6 @@
 
   @media (min-width: $lg) {
     height: 100vh;
-
   }
 
   .gallery-item {
@@ -171,10 +170,10 @@
       top: 33%;
     }
     @media (min-width: $lg) {
-      width: 45%;
+      width: 55%;
       height: 80%;
       right: 0;
-      left: auto;
+      left: 70%;
       top: auto;
     }
   }

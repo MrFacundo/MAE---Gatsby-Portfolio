@@ -31,8 +31,8 @@ export default function useLocoScroll(start) {
     });
 
     locoScroll.on("scroll", ({ scroll }) => {
-      var scrolly = scroll.y
-      console.log(scrolly);
+      // var scrolly = scroll.y
+      // console.log(scrolly);
 
       ScrollTrigger.update();
     });

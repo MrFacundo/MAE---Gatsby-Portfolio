@@ -8,17 +8,18 @@ import Hero from "../components/Hero";
 import Loader from "../components/Loader";
 import Intro from "../components/Intro";
 import Gallery from "../components/Gallery";
+import GalleryMobile from "../components/GalleryMobile";
+
 import About from "../components/About";
 import Footer from "../components/Footer";
-import ScrollAnimation from "../components/ScrollAnimation";
+// import ScrollAnimation from "../components/ScrollAnimation";
 
 import useLocoScroll from "../hooks/useLocoScroll";
 
 import cn from "classnames";
-import { isIOS } from "react-device-detect";
+import { BrowserView, MobileView, isIOS } from "react-device-detect";
 
 const Home = () => {
-
   const ref = useRef(null);
   const [preloader, setPreload] = useState(true);
 
@@ -61,7 +62,7 @@ const Home = () => {
   // if (!preloader) {
   //   locoScroll.on('scroll', ({ limit, scroll }) => {
   //     const progress = scroll.y / limit.y * 100
-    
+
   //     console.log(progress);
   //   })
   // }
@@ -78,13 +79,18 @@ const Home = () => {
           ref={ref}
         >
           {/* <Navbar /> */}
-          <ScrollAnimation />
+          {/* <ScrollAnimation /> */}
           <Hero />
           {/* <img src={logo} alt="Logo" /> */}
 
           {/* <Featured /> */}
           <Intro />
-          <Gallery />
+          <MobileView>
+            <GalleryMobile />
+          </MobileView>
+          <BrowserView>
+            <Gallery />
+          </BrowserView>
           <About />
           <Contact />
           <Footer />
