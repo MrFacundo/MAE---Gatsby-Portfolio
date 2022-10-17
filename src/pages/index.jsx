@@ -1,6 +1,7 @@
 import React from "react";
 import Loadable from "react-loadable";
-const loader = () => <div>Loading.</div>;
+import LoadingScreen from "../components/LoadingScreen";
+const loader = () => <LoadingScreen />;
 
 export function Head() {
   return (
