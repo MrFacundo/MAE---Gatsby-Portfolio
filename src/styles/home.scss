@@ -20,7 +20,7 @@ html {
   position: relative;
   backface-visibility: hidden;
   overflow: hidden;
-  .ios-overflow{
+  &.ios-overflow{
    overflow-x: scroll; /* Must be 'scroll' not 'auto' */
   -webkit-overflow-scrolling: touch;
   }
