@@ -13,7 +13,7 @@ const gallery_items = [
     excerpt:
       "Creado a partir de diferentes técnicas que he ido aprendiendo a lo largo de mi trayectoria, este método consiste en trabajar en el inconsciente para sanar creencias limitantes (como por ejemplo el no sentirse merecedor, no sentirse valioso, creer que uno no puede), así como resolver conflictos con el dinero, de relaciones laborales, personales, de pareja. También trata dolores físicos, traumas, adicciones, estados de depresión, ansiedad, entre otros. Buscamos convertir las creencias instauradas en creencias potenciadoras que nos ayuden a vivir una vida feliz y en paz.",
     excerpt_mobile:
-      "Creado a partir de diferentes técnicas que he ido aprendiendo a lo largo de mi trayectoria, este método consiste en trabajar desde inconsciente para sanar creencias limitantes y convertirlas en creencias potenciadoras que nos ayuden a vivir una vida feliz y en paz.",
+      "...es un método creado a partir de diferentes técnicas que he ido aprendiendo a lo largo de mi trayectoria. Cnsiste en trabajar desde inconsciente para sanar creencias limitantes y convertirlas en creencias potenciadoras que nos ayuden a vivir una vida feliz y en paz.",
 
     img_src: image5,
     img_src_mobile: "",
@@ -35,7 +35,7 @@ const gallery_items = [
     excerpt:
       "Tratamos de encontrar el conflicto para sanarlo en el inconsciente, aplicando la canalización, don que descubrí hace algunos años y cada vez fue creciendo más y más. Muchas veces nos cuesta hablar o expresarnos y este método nos permite ver más allá e ir a la raíz del conflicto para poder sanar. En el caso de las dolencias físicas, el procedimiento es el mismo: luego de encontrar la raíz que ocasiona el dolor o la sintomatología, sbuscamos sanarla.",
     excerpt_mobile:
-      "Aquí, me enfoco en encontrar el conflicto para sanarlo en el inconsciente, aplicando la canalización, don que descubrí hace algunos años.  Cuando encontramos la raíz que ocasiona el dolor o sintomatología, se sana.",
+      "Aquí nos enfocamos en encontrar el conflicto para sanarlo en el inconsciente aplicando la canalización, don que descubrí hace algunos años.  Cuando encontramos la raíz que ocasiona el dolor o sintomatología, se sana.",
     img_src: image2,
     img_src_mobile: "",
   },
