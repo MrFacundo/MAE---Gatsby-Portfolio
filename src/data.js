@@ -13,7 +13,7 @@ const gallery_items = [
     excerpt:
       "Creado a partir de diferentes técnicas que he ido aprendiendo a lo largo de mi trayectoria, este método consiste en trabajar en el inconsciente para sanar creencias limitantes (como por ejemplo el no sentirse merecedor, no sentirse valioso, creer que uno no puede), así como resolver conflictos con el dinero, de relaciones laborales, personales, de pareja. También trata dolores físicos, traumas, adicciones, estados de depresión, ansiedad, entre otros. Buscamos convertir las creencias instauradas en creencias potenciadoras que nos ayuden a vivir una vida feliz y en paz.",
     excerpt_mobile:
-      "...es un método creado a partir de diferentes técnicas que he ido aprendiendo a lo largo de mi trayectoria. Cnsiste en trabajar desde inconsciente para sanar creencias limitantes y convertirlas en creencias potenciadoras que nos ayuden a vivir una vida feliz y en paz.",
+      "...es un método creado a partir de diferentes técnicas que he ido aprendiendo a lo largo de mi trayectoria. Consiste en trabajar desde inconsciente para sanar creencias limitantes y convertirlas en creencias potenciadoras que nos ayuden a vivir una vida feliz y en paz.",
 
     img_src: image5,
     img_src_mobile: "",
@@ -24,7 +24,7 @@ const gallery_items = [
     excerpt:
       "Todos los atletas tienen una meta u objetivo. A través de este método, mi labor consiste en trabajar la concentración, focalizar en la templanza, instruir la mente para obtener mayor tranquilidad en los momentos más críticos.",
     excerpt_mobile:
-      "A través del Método de Sanación Asistida buscamos trabajar la concentración, focalizarnos en la templanza e instruir la mente para obtener mayor tranquilidad en los momentos más críticos",
+      "A través del Método de Sanación Asistida buscamos trabajar la concentración, focalizarnos en la templanza e instruir la mente para obtener mayor tranquilidad en los momentos más críticos.",
     img_src: image1,
     img_src_mobile: image6,
 
@@ -55,7 +55,7 @@ const gallery_items = [
     excerpt:
       "Los Registros Akáshicos son una memoria universal de la existencia. Representan un espacio multidimensional dónde se “guardan” todas las experiencias del alma, que incluyen todos los conocimientos y experiencias de las vidas pasadas, la vida presente y las potencialidades futuras. A través de una lectura de Registros Akáshicos podemos comprender la realidad de una manera mucho más profunda y sanadora.",
     excerpt_mobile:
-      "Los Registros Akáshicos son una memoria universal de la existencia. Representan un espacio dónde se “guardan” todas las experiencias y conocimientos del alma. A través de su lectura podemos comprender la realidad de una manera profunda y sanadora.",
+      "Los Registros Akáshicos son una memoria universal de la existencia. Representan un espacio donde se “guardan” todas las experiencias y conocimientos del alma. A través de su lectura podemos comprender la realidad de una manera profunda y sanadora.",
     img_src: image4,
     img_src_mobile: "",
   },
