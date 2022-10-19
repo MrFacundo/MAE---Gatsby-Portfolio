@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import "./style.scss";
+import cn from "classnames";
 
-export default function Loader() {
+export default function Loader({show}) {
   const loader = useRef();
 
   useEffect(() => {
@@ -14,9 +15,12 @@ export default function Loader() {
 
     return () => ctx.revert();
   }, []);
-
+  console.log(show)
   return (
-    <div ref={loader}>
+    <div
+      className={cn("container", { "hidden": !show })}
+      ref={loader}
+    >
       <div id="container" className="loader-container absolute">
         <div id="overlay" className="overlay absolute"></div>
         <div className="overlay-overlay absolute">

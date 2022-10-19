@@ -8,7 +8,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: $primary;
+  background-color: $onyx;
   overflow: hidden;
 }
 
@@ -25,19 +25,6 @@ html {
     -webkit-overflow-scrolling: touch;
   }
 }
-
-// html.has-scroll-smooth {
-
-//   @media (min-width: $lg) {
-//     bottom: 0;
-//     left: 0;
-//     overflow: hidden;
-//     position: fixed;
-//     right: 0;
-//     top: 0;
-//   }
-
-// }
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) {
