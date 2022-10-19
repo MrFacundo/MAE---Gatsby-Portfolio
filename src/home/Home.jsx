@@ -59,31 +59,28 @@ const Home = () => {
 
   return (
     <>
-      {preloader ? (
-        <Loader />
-      ) : (
-        <div
-          className={cn("main-container", { "ios-overflow": isIOS })}
-          id="main-container"
-          data-scroll-container
-          ref={ref}
-        >
-          {/* <Navbar /> */}
-          {/* <ScrollAnimation /> */}
-          <Hero />
-          {/* <Featured /> */}
-          <Intro />
-          <MobileView>
-            <GalleryMobile />
-          </MobileView>
-          <BrowserView>
-            <Gallery />
-          </BrowserView>
-          <About />
-          <Contact />
-          <Footer />
-        </div>
-      )}
+      <Loader show = {preloader} />
+      <div
+        className={cn("main-container", { "ios-overflow": isIOS })}
+        id="main-container"
+        data-scroll-container
+        ref={ref}
+      >
+        {/* <Navbar /> */}
+        {/* <ScrollAnimation /> */}
+        <Hero />
+        {/* <Featured /> */}
+        <Intro />
+        <MobileView>
+          <GalleryMobile />
+        </MobileView>
+        <BrowserView>
+          <Gallery />
+        </BrowserView>
+        <About />
+        <Contact />
+        <Footer />
+      </div>
     </>
   );
 };

@@ -1,9 +1,12 @@
 @import "../../styles/_variables.scss";
-
+.container.hidden{
+  display: none;
+}
 .loader-container {
+  z-index: 100;
   width: 100vw;
   height: 700px;
-  opacity: 0;
+  opacity: 1;
   display: flex;
   align-items: center;
   justify-content: center;
