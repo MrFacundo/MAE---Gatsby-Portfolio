@@ -6,22 +6,24 @@ import logo from "../../images/logo2primary.png";
 
 import "./style.scss";
 
-export default function Hero({show}) {
+export default function Hero({ show }) {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   const app = useRef();
   const tl = useRef();
 
   useEffect(() => {
-    let ctx = gsap.context(() => {
-      tl.current = gsap
-        .timeline()
-        .to(".top", { opacity: 1, duration: 2 })
-        .to(".line", { opacity: 1, duration: 2 }, 0.75)
-        .to(".hero__logo", { opacity: 1, duration: 2 }, 1.5);
-    }, app);
+    if (!show) {
+      let ctx = gsap.context(() => {
+        tl.current = gsap
+          .timeline()
+          .to(".top", { opacity: 1, duration: 2 })
+          .to(".line", { opacity: 1, duration: 2 }, 0.75)
+          .to(".hero__logo", { opacity: 1, duration: 2 }, 1.5);
+      }, app);
 
-    return () => ctx.revert();
+      return () => ctx.revert();
+    }
   }, [show]);
 
   return (
