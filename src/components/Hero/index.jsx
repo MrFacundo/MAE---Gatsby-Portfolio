@@ -6,7 +6,7 @@ import logo from "../../images/logo2primary.png";
 
 import "./style.scss";
 
-export default function Hero() {
+export default function Hero({show}) {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   const app = useRef();
@@ -22,7 +22,7 @@ export default function Hero() {
     }, app);
 
     return () => ctx.revert();
-  }, []);
+  }, [show]);
 
   return (
     <>
