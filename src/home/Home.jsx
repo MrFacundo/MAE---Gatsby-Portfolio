@@ -68,7 +68,7 @@ const Home = () => {
       >
         {/* <Navbar /> */}
         {/* <ScrollAnimation /> */}
-        <Hero />
+        <Hero show = {preloader}  />
         {/* <Featured /> */}
         <Intro />
         <MobileView>
