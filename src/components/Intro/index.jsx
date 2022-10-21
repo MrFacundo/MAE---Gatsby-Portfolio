@@ -17,8 +17,7 @@ export default function Intro() {
 
   useEffect(() => {
     if (reveal) {
-
-      gsap.to(".intro-line", {
+      gsap.to(".intro__line", {
         duration: 3,
         opacity: 1,
         stagger: 0.5,
@@ -28,16 +27,13 @@ export default function Intro() {
   }, [reveal]);
 
   return (
-    <section
-      className="intro-section"
-      data-scroll-section
-    >
-      <p ref={ref} className="intro-text">
-        <span className="intro-line">Hazte consciente,</span>
+    <section id="intro" className="intro__section" data-scroll-section>
+      <p ref={ref} className="intro__text">
+        <span className="intro__line">Hazte consciente,</span>
         <br />
-        <span className="intro-line">vive, </span>
-        <span className="intro-line">trasciende. </span>
-        <span className="intro-line">Conquista tus metas.</span>
+        <span className="intro__line">vive, </span>
+        <span className="intro__line">trasciende. </span>
+        <span className="intro__line">Conquista tus metas.</span>
       </p>
     </section>
   );

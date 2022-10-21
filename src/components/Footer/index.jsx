@@ -18,7 +18,7 @@ export default function Footer() {
   useEffect(() => {
     if (reveal) {
       gsap.fromTo(
-        "#location-text",
+        "#made-by-text",
         { y: 30 },
         {
           duration: 1,
@@ -31,14 +31,14 @@ export default function Footer() {
 
   return (
     <section className="footer" data-scroll-section>
-      <div className="footer-container">
-        <p className="copyright">© 2022 Maria Danai Eguiguren</p>
+      <div className="footer__container">
+        <p className="footer__copyright">© 2022 Maria Danai Eguiguren</p>
         <p
-          className={cn("location", { "is-reveal": reveal })}
-          id="location-text"
+          className={cn("footer__made-by", { "is-reveal": reveal })}
+          id="made-by-text"
           ref={ref}
         >
-          Made with &#x3c;3 by <a href="https://mrfacundo.github.io/portfolio/"  target="_blank" rel="noopener noreferrer">F Troitero</a>
+          Made with 🤍 by <a href="https://mrfacundo.github.io/portfolio/"  target="_blank" rel="noopener noreferrer">MrFacundo</a>
         </p>
       </div>
     </section>

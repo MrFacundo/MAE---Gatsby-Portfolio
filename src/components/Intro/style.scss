@@ -1,6 +1,6 @@
 @import "../../styles/_variables.scss";
 
-.intro-section {
+.intro__section {
   display: flex;
   align-items: center;
   height: 600px;
@@ -9,7 +9,7 @@
     height: 60vh;
     padding: 100px 15% 0;
   }
-  .intro-text {
+  .intro__text {
     max-width: 60%;
     font-size: 3rem;
     line-height: 5rem;
@@ -23,7 +23,7 @@
       font-size: 6rem;
       line-height: 7rem;
     }
-    .intro-line {
+    .intro__line {
       font-family: $didactic;
       opacity: 0;
       transform: translateY(0px);
