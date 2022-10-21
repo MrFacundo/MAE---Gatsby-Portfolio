@@ -4,7 +4,7 @@
   background-color: $tertiary;
   width: 100vw;
 
-  min-height: 1200px;
+  min-height: 1000px;
   display: flex;
   margin: 0 auto;
   @media (min-width: $lg)  {
@@ -21,11 +21,11 @@
   position: absolute;
   z-index: 5;
   top: 5%;
-  left: 0;
+  left: 5%;
 
   @media (min-width: $lg) {
     top: 10%;
-    left: 5%;
+    left: 10%;
     line-height: 6vw;
     font-size: 5rem;
   }
@@ -34,23 +34,18 @@
 .about__text {
   width: 80%;
   position: absolute;
-  // top: 70%;
-  // left: 50%;
-  top: 50%;
+  top: 55%;
   left: 10%;
-  backdrop-filter: blur(2px);
-  border-radius: 20px;
   font-size: 1.3rem;
   margin: 0 auto;
 
   @media (min-width: $lg) {
     transform: none;
-    left: auto;
+    left: 5%;
     width: 33%;
     position: relative;
     z-index: 5;
     margin-top: 20%;
-    margin-left: 10%;
     font-family: $didactic;
     font-weight: 400;
     font-size: 1.8rem;
@@ -61,7 +56,9 @@
   width: 50%;
   position: relative;
   text-align: -webkit-right;
-
+  @media (min-width: $lg) {
+    width: 60%;
+  }
   .about_image-1 {
     position: absolute;
     top: 7%;
@@ -72,7 +69,7 @@
     @media (min-width: $lg) {
       height: auto;
       width: 55%;
-      left: 30%;
+      left: 25%;
       bottom: 25%;
     }
   }

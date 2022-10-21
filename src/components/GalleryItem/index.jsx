@@ -28,17 +28,17 @@ export default function GalleryItem({
       >
         <div></div>
         <div className={"gallery-item"}>
-          <div className="gallery-item-info">
-            <div className="gallery-item-heading">
-              <h1 className="gallery-info-title">{title}</h1>
-              <h2 className="gallery-info-subtitle">{subtitle}</h2>
+          <div className="gallery-item__info">
+            <div className="gallery-info__heading">
+              <h1 className="gallery-info__title">{title}</h1>
+              <h2 className="gallery-info__subtitle">{subtitle}</h2>
             </div>
-            <p className="gallery-info-excerpt">
+            <p className="gallery-info__excerpt">
               {excerpt}
             </p>
           </div>
           <div
-            className="gallery-item-image"
+            className="gallery-item__image"
             style={{ backgroundImage: `url(${img_src})`}}
           ></div>
         </div>

@@ -15,7 +15,7 @@ export default function Contact() {
   return (
     <section className="contact-section" data-scroll-section>
       <div className="left-column">
-        <div className="section-title">
+        <div className="contact__title">
           <h1>Contactos</h1>
         </div>
         <div className="row">
@@ -40,16 +40,16 @@ export default function Contact() {
         </div>
       </div>
       <div className="contact-container">
-        <div className="contact">
-          <div className="email">
+        <div className="contact__contacts">
+          <div className="contacts__email">
             <span className="email-title">Email: </span>
             <p className="email-content">info@mariadanaieguiguren.com</p>
           </div>
-          <div className="phone">
+          <div className="contacts__phone">
             <span className="phone-title">Teléfono </span>
             <p className="phone-content">+351 913 547 520</p>
           </div>
-          <div className="address">
+          <div className="contacts__address">
             <span className="address-title">Dirección: </span>
             <p className="address-content">Paço de Arcos, Lisboa</p>
           </div>

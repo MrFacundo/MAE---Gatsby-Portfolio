@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-
-// import { useScrollPositions } from "../hooks/useScrollPositions";
-import "../styles/home.scss";
+import useLocoScroll from "../hooks/useLocoScroll";
+import cn from "classnames";
+import { BrowserView, MobileView, isIOS } from "react-device-detect";
 
 import Contact from "../components/Contact";
 import Hero from "../components/Hero";
@@ -11,11 +11,9 @@ import Gallery from "../components/Gallery";
 import GalleryMobile from "../components/GalleryMobile";
 import About from "../components/About";
 import Footer from "../components/Footer";
-// import ScrollAnimation from "../components/ScrollAnimation";
 
-import useLocoScroll from "../hooks/useLocoScroll";
-import cn from "classnames";
-import { BrowserView, MobileView, isIOS } from "react-device-detect";
+
+import "../styles/home.scss";
 
 const Home = () => {
   const ref = useRef(null);
@@ -69,7 +67,6 @@ const Home = () => {
           ref={ref}
         >
           {/* <Navbar /> */}
-          {/* <ScrollAnimation /> */}
           <Hero />
           {/* <Featured /> */}
           <Intro />

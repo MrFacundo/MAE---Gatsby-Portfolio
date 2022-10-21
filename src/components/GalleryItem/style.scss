@@ -1,6 +1,6 @@
 @import "../../styles/_variables.scss";
 
-.gallery-item-info {
+.gallery-item__info {
   height: 90%;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@
     left: 0;
     bottom: 20%;
   }
-  .gallery-info-title {
+  .gallery-info__title {
     line-height: 2rem;
     font-family: $didactic;
     font-weight: 600;
@@ -38,7 +38,7 @@
     }
   }
 
-  .gallery-info-subtitle {
+  .gallery-info__subtitle {
     line-height: 2rem;
     font-size: 2rem;
     position: relative;
@@ -59,10 +59,9 @@
     }
   }
 
-  .gallery-info-excerpt {
+  .gallery-info__excerpt {
     justify-self: auto;
     width: 85vw;
-
     position: relative;
     line-height: 24px;
     font-family: $didactic;
@@ -72,6 +71,7 @@
     margin-top: 2rem;
     @media (min-width: $lg) {
       width: auto;
+      font-size: 24px;
     }
   }
 }
@@ -86,13 +86,13 @@
   }
 
   &.is-reveal {
-    .gallery-item-image {
+    .gallery-item__image {
       transform: scale(1);
       filter: none;
     }
   }
 }
-.gallery-item-image {
+.gallery-item__image {
   background-size: cover;
   background-position: top;
   transform-origin: center;

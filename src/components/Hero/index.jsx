@@ -1,16 +1,21 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
-import { useMediaQuery } from "react-responsive";
+// import { useMediaQuery } from "react-responsive";
+import { isMobile, BrowserView, MobileView } from "react-device-detect";
+
+import ScrollAnimation from "../ScrollAnimation";
+import ScrollAnimationMobile from "../ScrollAnimationMobile";
 
 import logo from "../../images/logo2primary.png";
-
 import "./style.scss";
 
 export default function Hero() {
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  // const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
-  const app = useRef();
+  const heroText = useRef();
   const tl = useRef();
+  const scrollAnimation = useRef();
+  const scrollAnimationMobile = useRef();
 
   useEffect(() => {
     let ctx = gsap.context(() => {
@@ -19,20 +24,22 @@ export default function Hero() {
         .to(".top", { opacity: 1, duration: 2 })
         .to(".line", { opacity: 1, duration: 2 }, 0.75)
         .to(".hero__logo", { opacity: 1, duration: 2 }, 1.5);
-    }, app);
+
+      if (isMobile) {
+        tl.current.to(scrollAnimationMobile.current, { opacity: 1, duration: 1 }, 2.5);
+      } else {
+        tl.current.to(scrollAnimation.current, { opacity: 1, duration: 1 }, 2.5);
+      }
+    }, heroText);
 
     return () => ctx.revert();
   }, []);
 
   return (
     <>
-      <section className="hero-container" data-scroll-section>
+      <section id="hero" className="hero-container" data-scroll-section>
         <div className="overlay absolute"></div>
-        <div className="overlay-overlay absolute">
-          <div className="up"></div>
-          <div className="down"> </div>
-        </div>
-        <div ref={app} className="hero-text" id="hero-text">
+        <div ref={heroText} className="hero__text" id="hero-text">
           <h2 className="top">Maria Danai Eguiguren</h2>
           <div>
             <h2
@@ -62,6 +69,12 @@ export default function Hero() {
             <img className="hero__logo" src={logo} alt="" />
           </div>
         </div>
+        <MobileView>
+          <ScrollAnimationMobile ref={scrollAnimationMobile} />
+        </MobileView>
+        <BrowserView>
+          <ScrollAnimation ref={scrollAnimation} />
+        </BrowserView>
       </section>
     </>
   );

@@ -18,7 +18,7 @@ const About = () => {
       <h1
         className="about__title"
         data-scroll
-        data-scroll-speed="-0.8"
+        data-scroll-speed="-0.3"
         data-scroll-direction="horizontal"
       >
         {Text.title}
@@ -26,7 +26,7 @@ const About = () => {
       <div
         className="about__text"
         data-scroll
-        data-scroll-speed="-1.5"
+        data-scroll-speed="-1"
         data-scroll-target="#fixed-target"
       >
         <p> {Text.paragraph1}</p>

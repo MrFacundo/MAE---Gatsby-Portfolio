@@ -10,6 +10,8 @@
   @media (min-width: $lg) {
     height: 40vh;
     flex-direction: row;
+    padding: 80px 80px 40px 80px;
+
   }
 }
 
@@ -25,16 +27,22 @@
     grid-auto-columns: minmax(0, 1fr);
     grid-auto-flow: column;
   }
-  .contact {
+  .contact__contacts {
     padding-top: 20px;
-    .email,
-    .phone,
-    .address {
+    @media (min-width: $lg) {
+      font-size: 1.3rem;
+    }
+    .contacts__email,
+    .contacts__phone,
+    .contacts__address {
       padding: 20px;
     }
     span {
       font-weight: 600;
       font-size: 1.2rem;
+      @media (min-width: $lg) {
+        font-size: 1.6rem;
+      }
     }
     p {
       padding-top: 10px;
@@ -52,7 +60,7 @@
     display: block;
     width: 20%;
   }
-  .section-title {
+  .contact__title {
     font-family: $didactic;
     font-weight: 600;
     font-size: 3rem;

@@ -6,7 +6,7 @@
   background-color: $secondary;
   color: $primary;
 
-  .footer-container {
+  .footer__container {
     width: 90%;
     display: grid;
     grid-template-rows: 50%;
@@ -16,17 +16,16 @@
       width: 80%;
       grid-template-columns: 33% 33% 33%;
     }
-    .copyright {
+    .footer__copyright {
       @media (min-width: $lg) {
         text-align: left;
       }
     }
   }
-  .location {
+  .footer__made-by {
     font-size: 1rem;
     text-transform: uppercase;
-    font-family: "Bodoni Moda", serif;
-
+    font-family: $bodoniModa;
     opacity: 0;
     transition: opacity 1s;
 
