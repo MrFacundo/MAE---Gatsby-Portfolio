@@ -10,7 +10,6 @@ import logo from "../../images/logo2primary.png";
 import "./style.scss";
 
 export default function Hero() {
-  // const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   const heroText = useRef();
   const tl = useRef();
@@ -73,7 +72,7 @@ export default function Hero() {
           <ScrollAnimationMobile ref={scrollAnimationMobile} />
         </MobileView>
         <BrowserView>
-          <ScrollAnimation ref={scrollAnimation} />
+          <ScrollAnimation  scrollTo="#intro" theme="light" position="right" ref={scrollAnimation} />
         </BrowserView>
       </section>
     </>

@@ -38,7 +38,7 @@ export default function Gallery() {
   };
 
   return (
-    <section data-scroll-section className="section-wrapper gallery-wrap">
+    <section id="gallery" data-scroll-section className="section-wrapper gallery-wrap">
       <div
         className="gallery"
         ref={ref}

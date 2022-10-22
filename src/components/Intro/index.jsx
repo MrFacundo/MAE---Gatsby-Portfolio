@@ -1,12 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
-
 import gsap from "gsap";
 import useOnScreen from "../../hooks/useOnScreen";
+import { isMobile } from "react-device-detect";
+
+import ScrollAnimation from "../ScrollAnimation";
 
 import "./style.scss";
 
 export default function Intro() {
   const ref = useRef(null);
+  const scrollAnimation = useRef();
 
   const [reveal, setReveal] = useState(false);
   const onScreen = useOnScreen(ref);
@@ -23,6 +26,9 @@ export default function Intro() {
         stagger: 0.5,
         ease: "power4.out",
       });
+
+      gsap.to(scrollAnimation.current, { opacity: 1, duration: 1, delay: 3 });
+
     }
   }, [reveal]);
 
@@ -35,6 +41,7 @@ export default function Intro() {
         <span className="intro__line">trasciende. </span>
         <span className="intro__line">Conquista tus metas.</span>
       </p>
+      {!isMobile && <ScrollAnimation scrollTo="#gallery" position="left" theme='dark' ref={scrollAnimation} />}
     </section>
   );
 }

@@ -2,21 +2,42 @@
 
 .scroll-animation {
   opacity: 0;
-}
-.scroll-down {
   bottom: 10%;
   height: 100px;
   margin: 0 auto;
   position: absolute;
-  right: 10%;
   text-align: center;
   z-index: 3;
+  &.right {
+    right: 10%;
+  }
+  &.left {
+    left: 10%;
+  }
+  &.light {
+    .scroll-down-bar::before {
+      background: $primary;
+    }
+    .background {
+      stroke: $primary;
+    }
+    .foreground {
+      stroke: $primary;
+    }
+  }
+  &.dark {
+    .scroll-down-bar::before {
+      background: $onyx;
+    }
+    .background {
+      stroke: $onyx;
+    }
+    .foreground {
+      stroke: $onyx;
+    }
+  }
 }
-.scroll-down-text {
-  color: $primary;
-  font-family: $didactic;
-  font-size: 40px;
-}
+
 .scroll-down-bar {
   background: transparent;
   top: 50%;
@@ -31,7 +52,6 @@
 }
 .scroll-down-bar::before {
   animation: scrollDown 2.5s infinite;
-  background: $primary;
   content: "";
   display: inline-block;
   height: 60px;
@@ -49,7 +69,6 @@
 
 .background {
   fill: transparent;
-  stroke: $primary;
   transition: all 200ms ease;
 }
 
@@ -57,7 +76,6 @@
   fill: transparent;
   stroke-dasharray: 377;
   stroke-dashoffset: 377;
-  stroke: #fff;
   transform-origin: 50% 50%;
   transform: rotate(-90deg);
   transition: all 800ms ease;
