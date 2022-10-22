@@ -1,9 +1,9 @@
 @import "../../styles/_variables.scss";
 
-.scroll-animation {
+.scroll-animation-mobile {
   opacity: 0;
 }
-.scroll-down {
+.scroll-down-mobile {
   bottom: 10%;
   height: 100px;
   margin: 0 auto;
@@ -12,12 +12,8 @@
   text-align: center;
   z-index: 3;
 }
-.scroll-down-text {
-  color: $primary;
-  font-family: $didactic;
-  font-size: 40px;
-}
-.scroll-down-bar {
+
+.scroll-down-bar-mobile {
   background: transparent;
   top: 50%;
   display: inline-block;
@@ -29,7 +25,7 @@
   right: 0;
   width: 1px;
 }
-.scroll-down-bar::before {
+.scroll-down-bar-mobile::before {
   animation: scrollDown 2.5s infinite;
   background: $primary;
   content: "";
@@ -39,26 +35,6 @@
   position: absolute;
   top: 0;
   width: 2px;
-  .circle {
-    height: 124px;
-    width: 124px;
-  }
-  
-  .background {
-    fill: transparent;
-    stroke: $primary;
-    transition: all 200ms ease;
-  }
-  
-  .foreground {
-    fill: transparent;
-    stroke-dasharray: 377;
-    stroke-dashoffset: 377;
-    stroke: #fff;
-    transform-origin: 50% 50%;
-    transform: rotate(-90deg);
-    transition: all 800ms ease;
-  }
   
   z-index: 1;
 }

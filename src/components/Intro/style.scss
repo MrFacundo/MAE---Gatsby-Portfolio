@@ -6,8 +6,8 @@
   height: 600px;
   @media (min-width: $lg) {
     justify-content: center;
-    height: 60vh;
-    padding: 100px 15% 0;
+    height: 100vh;
+    padding: 0 15%;
   }
   .intro__text {
     max-width: 60%;
