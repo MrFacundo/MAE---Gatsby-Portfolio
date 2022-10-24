@@ -1,6 +1,8 @@
 import React from "react";
 import Loadable from "react-loadable";
 import LoadingScreen from "../components/LoadingScreen";
+import {graphql} from 'gatsby';
+
 const loader = () => <LoadingScreen />;
 
 export function Head() {
@@ -25,3 +27,17 @@ const Index = () => {
   );
 };
 export default Index;
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
