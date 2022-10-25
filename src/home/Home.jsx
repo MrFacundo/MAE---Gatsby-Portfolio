@@ -11,6 +11,7 @@ import Gallery from "../components/Gallery";
 import GalleryMobile from "../components/GalleryMobile";
 import About from "../components/About";
 import Footer from "../components/Footer";
+import LangSwitcher from "../components/LanguageSwitcher";
 
 
 import "../styles/home.scss";
@@ -79,6 +80,7 @@ const Home = () => {
           <About />
           <Contact />
           <Footer />
+          <LangSwitcher />
         </div>
       )}
     </>

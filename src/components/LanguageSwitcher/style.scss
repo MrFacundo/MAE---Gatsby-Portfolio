@@ -1,0 +1,14 @@
+@import "../../styles/_variables.scss";
+
+.lang-switcher {
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+    background: $white;
+    padding: 5px;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    @media (min-width: $lg) {
+        padding: 10px;
+      }
+}
