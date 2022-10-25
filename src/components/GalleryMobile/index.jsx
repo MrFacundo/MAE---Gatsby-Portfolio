@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import useOnScreen from "../../hooks/useOnScreen";
 import cn from "classnames";
+import { useTranslation } from "gatsby-plugin-react-i18next";
+
 
 import "./style.scss";
 import gallery_items from "../../data"
@@ -16,6 +18,8 @@ function GalleryItemMobile({
   const ref = useRef(null);
   const onScreen = useOnScreen(ref, 0.5);
 
+  const { t } = useTranslation();
+
   return (
     <div
       className={cn("gallery-item-wrapper-mobile", { "is-reveal": onScreen })}
@@ -23,8 +27,8 @@ function GalleryItemMobile({
     >
       <div className="gallery-item-mobile">
         <div className="gallery-item-heading-mobile">
-          <h1 className="gallery-info-title-mobile">{title}</h1>
-          <h2 className="gallery-info-subtitle-mobile">{subtitle}</h2>
+          <h1 className="gallery-info-title-mobile">{t(title)}</h1>
+          <h2 className="gallery-info-subtitle-mobile">{t(subtitle)}</h2>
         </div>
         <div
           className="gallery-item-image-mobile"
@@ -36,7 +40,7 @@ function GalleryItemMobile({
           }}
         ></div>
         <p className="gallery-info-excerpt-mobile">
-          {excerpt_mobile}
+          {t(excerpt_mobile)}
         </p>
       </div>
     </div>
