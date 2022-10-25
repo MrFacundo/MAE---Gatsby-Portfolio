@@ -1,17 +1,14 @@
 import React from "react";
-import "./style.scss";
 import { useMediaQuery } from "react-responsive";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
 import img1 from "../../images/IMG_9806.jpg";
-
-const Text = {
-  title: "Sobre mí",
-  paragraph1: `Mi nombre es Maria Danai Eguiguren. Nací en Argentina, en el barrio porteño de Recoleta.`,
-  paragraph2: `Mi vida, como la vida de millones de personas no fue una vida fácil a nivel emocional. Tuve que desaprender y re-aprender muchas cosas nuevas, deshacerme de creencias que me limitaban y no me dejaban ver con claridad y convertirlas en creencias potenciadoras que me ayuden a vivir una vida mas feliz y en paz.`,
-};
+import "./style.scss";
 
 const About = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+
+  const { t } = useTranslation();
 
   return (
     <section id="fixed-target" className="about-section" data-scroll-section>
@@ -21,7 +18,7 @@ const About = () => {
         data-scroll-speed="-0.3"
         data-scroll-direction="horizontal"
       >
-        {Text.title}
+        {t("about_title")}
       </h1>
       <div
         className="about__text"
@@ -29,11 +26,9 @@ const About = () => {
         data-scroll-speed="-1"
         data-scroll-target="#fixed-target"
       >
-        <p> {Text.paragraph1}</p>
+        <p>{t("about_paragraph_1")}</p>
         <br />
-        <p> {Text.paragraph2}</p>
-        <br />
-        <p> {Text.paragraph3}</p>
+        <p>{t("about_paragraph_2")}</p>
       </div>
       <div className="about__image">
         <img

@@ -1,22 +1,23 @@
 import React from "react";
-
-// import { FaInstagram, FaFacebook, FaLinkedin, FaBeer } from "react-icons/fa";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
   faFacebook,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import logo from "../../images/logo2primary.png";
 
+import logo from "../../images/logo2primary.png";
 import "./style.scss";
 
 export default function Contact() {
+  const { t } = useTranslation();
+
   return (
     <section className="contact-section" data-scroll-section>
       <div className="left-column">
         <div className="contact__title">
-          <h1>Contactos</h1>
+          <h1>{t("contact_title")}</h1>
         </div>
         <div className="row">
           <span className="tooltip">
@@ -31,11 +32,11 @@ export default function Contact() {
           </span>
           <span className="tooltip">
             <FontAwesomeIcon icon={faFacebook} />
-            <span>Muy pronto!</span>
+            <span>{t("contact_tooltip")}</span>
           </span>
           <span className="tooltip">
             <FontAwesomeIcon icon={faYoutube} />
-            <span>Muy pronto!</span>
+            <span>{t("contact_tooltip")}</span>
           </span>
         </div>
       </div>
@@ -46,11 +47,11 @@ export default function Contact() {
             <p className="email-content">info@mariadanaieguiguren.com</p>
           </div>
           <div className="contacts__phone">
-            <span className="phone-title">Teléfono </span>
+            <span className="phone-title">{t("contact_phone")}</span>
             <p className="phone-content">+351 913 547 520</p>
           </div>
           <div className="contacts__address">
-            <span className="address-title">Dirección: </span>
+            <span className="address-title">{t("contact_address")}</span>
             <p className="address-content">Paço de Arcos, Lisboa</p>
           </div>
         </div>
@@ -59,7 +60,7 @@ export default function Contact() {
       </div>
       <div className="contact__logo">
         <img className="contact__logo-img" src={logo} alt="" />
-        <p className="contact__logo-text">Sanación Asistida</p>
+        <p className="contact__logo-text">{t("contact_logo_text")}</p>
       </div>
     </section>
   );
