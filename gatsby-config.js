@@ -47,12 +47,13 @@ module.exports = {
         },
         pages: [
           {
-            matchPath: "/:lang?/blog/:uid",
-            getLanguageFromPath: true,
+            matchPath: '/:lang?/404',
+            getLanguageFromPath: false,
           },
           {
-            matchPath: "/preview",
-          },
+            matchPath: '/:lang?/:uid',
+            getLanguageFromPath: false,
+          }
         ],
       },
     },

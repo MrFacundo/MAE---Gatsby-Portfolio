@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import useLocoScroll from "../hooks/useLocoScroll";
 import cn from "classnames";
-import { BrowserView, MobileView, isIOS } from "react-device-detect";
+import { BrowserView, MobileView, isIOS, isDesktop } from "react-device-detect";
 
 import Contact from "../components/Contact";
 import Hero from "../components/Hero";
@@ -80,7 +80,7 @@ const Home = () => {
           <About />
           <Contact />
           <Footer />
-          <LangSwitcher />
+          {isDesktop && <LangSwitcher />}
         </div>
       )}
     </>

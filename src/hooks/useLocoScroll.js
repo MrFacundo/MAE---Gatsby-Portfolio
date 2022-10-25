@@ -30,10 +30,7 @@ export default function useLocoScroll(start) {
       class: "is-reveal",
     });
 
-    locoScroll.on("scroll", ({ scroll }) => {
-      // var scrolly = scroll.y
-      // console.log(scrolly);
-
+    locoScroll.on("scroll", () => {
       ScrollTrigger.update();
     });
 

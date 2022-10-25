@@ -13,10 +13,10 @@ const gallery_items = [
     excerpt:
       "gallery_item_1_text",
     excerpt_mobile:
-      "",
+      "gallery_item_1_text_mobile",
 
     img_src: image5,
-    img_src_mobile: "gallery_item_1_text_mobile",
+    img_src_mobile: "",
   },
   {
     title: "gallery_item_2_title",
@@ -35,9 +35,9 @@ const gallery_items = [
     excerpt:
       "gallery_item_3_text",
     excerpt_mobile:
-      "",
+      "gallery_item_3_text_mobile",
     img_src: image2,
-    img_src_mobile: "gallery_item_3_text_mobile",
+    img_src_mobile: "",
   },
   {
     title: "gallery_item_4_title",
@@ -45,9 +45,9 @@ const gallery_items = [
     excerpt:
       "gallery_item_4_text",
     excerpt_mobile:
-      "",
+      "gallery_item_4_text_mobile",
     img_src: image3,
-    img_src_mobile: "gallery_item_4_text_mobile",
+    img_src_mobile: "",
   },
   {
     title: "gallery_item_5_title",

@@ -15,7 +15,7 @@ export default function Gallery() {
     // This does not seem to work without a settimeout
     setTimeout(() => {
       let sections = gsap.utils.toArray(".gallery-item-wrapper");
-
+      console.log(ref.current)
       gsap.to(sections, {
         xPercent: -100 * (sections.length - 1),
         ease: "none",
@@ -26,10 +26,10 @@ export default function Gallery() {
           pin: true,
           scrub: 0.5,
           snap: 1 / (sections.length - 1),
-          end: () => `+=${ref.current.offsetWidth}`,
+          end: () => "5000",
         },
       });
-      ScrollTrigger.refresh();
+      ScrollTrigger.refresh(true);
     });
   }, []);
 
