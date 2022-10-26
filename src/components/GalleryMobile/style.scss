@@ -17,6 +17,7 @@
 
     &.is-reveal {
       .gallery-item-image-mobile {
+        transform: scale(1);
         filter: none;
       }
     }
@@ -82,8 +83,14 @@
   .gallery-item-image-mobile {
     background-size: cover;
     background-position: top;
-    height: 50%;
+    min-height: 40%;
     width: 70%;
     box-shadow: $box-shadow;
+
+    transform-origin: center;
+    will-change: transform;
+    transform: scale(0.95);
+    transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+    filter: grayscale(100%) sepia(20%) brightness(80%);
   }
 }
