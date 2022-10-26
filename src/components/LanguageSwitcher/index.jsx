@@ -3,6 +3,7 @@ import { Link, useI18next } from "gatsby-plugin-react-i18next";
 import cn from "classnames";
 
 import "./style.scss";
+import triangle_up from "../../images/black-triangle-up_30x30.png";
 
 const LangSwitcher = () => {
   const [open, setOpen] = useState(false);
@@ -14,12 +15,10 @@ const LangSwitcher = () => {
   const { languages, originalPath, i18n } = useI18next();
   return (
     <div className="lang-switcher">
-       <button
-        onClick={handleOpen}
-        >
-        {!open &&<span className="arrow-up">⏶</span>}
+      <button onClick={handleOpen}>
+        {!open && <img className="arrow-up" src={triangle_up} alt="" />}
         <span className="current-lng"> {i18n.resolvedLanguage}</span>
-        {!open &&<span className="arrow-down">⏷</span>}
+        {!open && <img className="arrow-down" src={triangle_up} alt="" />}
       </button>
       <ul className={cn("languages-list", { "languages-list--open": open })}>
         {languages
