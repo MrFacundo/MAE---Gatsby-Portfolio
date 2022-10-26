@@ -9,16 +9,16 @@ const NotFound = () => {
   // const { t } = useTranslation();
 
   return (
-    <div className="cont_principal cont_error_active">
-      <div className="cont_error">
+    <div className="error_container error_container--active">
+      <div className="error__message">
         <h1>Oops</h1>
         <p>You just hit a route that doesn&#39;t exist...</p>
       </div>
-      <Link to="/" className="link">
+      <Link to="/" className="error__link">
         Go to homepage
       </Link>
-      <div class="cont_aura_1"></div>
-      <div class="cont_aura_2"></div>
+      <div class="error__aura_1"></div>
+      <div class="error__aura_2"></div>
     </div>
   );
 };

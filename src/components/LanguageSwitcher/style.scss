@@ -1,12 +1,16 @@
 @import "../../styles/_variables.scss";
 
 .lang-switcher {
-  background: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 5;
   padding: 5px;
   position: absolute;
   top: 0;
   right: 0;
   border-bottom-left-radius: 15%;
+  color: $onyx;
+  @include flex-center;
+  flex-direction: column;
 
   @media (min-width: $lg) {
     background: $white;
@@ -15,8 +19,37 @@
     bottom: 0;
     top: auto;
     padding: 10px;
+    padding-top: 3px;
     border-top-left-radius: 15%;
     border-top-right-radius: 15%;
     border-bottom-left-radius: 0;
+  }
+  .languages-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in;
+    &--open {
+      transition: max-height 0.5s ease-in;
+      max-height: 200px;
+    }
+  }
+
+  .arrow-up {
+    display: none;
+
+    @media (min-width: $lg) {
+      display: block;
+    }
+  }
+  .arrow-down {
+    display: block;
+
+    @media (min-width: $lg) {
+      display: none;
+    }
+  }
+
+  .current-lng {
+    text-decoration: underline;
   }
 }
