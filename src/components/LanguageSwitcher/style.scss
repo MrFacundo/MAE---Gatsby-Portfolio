@@ -18,8 +18,8 @@
     right: 20px;
     bottom: 0;
     top: auto;
-    padding: 10px;
-    padding-top: 3px;
+    padding: 8px;
+    padding-top: 5px;
     border-top-left-radius: 15%;
     border-top-right-radius: 15%;
     border-bottom-left-radius: 0;
@@ -34,20 +34,28 @@
     }
   }
 
-  .arrow-up {
-    display: none;
+  .arrow-up, .arrow-down {
+    filter: contrast(0.5);
+    height: 10px;
+    margin: 0 auto;
+  }
 
+  .arrow-up {
+    margin-bottom: 5px;
+    display: none;
     @media (min-width: $lg) {
       display: block;
     }
   }
   .arrow-down {
+    margin-top: 5px;
+    transform: rotate(180deg);
     display: block;
-
     @media (min-width: $lg) {
       display: none;
     }
   }
+
 
   .current-lng {
     text-decoration: underline;

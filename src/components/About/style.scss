@@ -3,15 +3,13 @@
 .about-section {
   background-color: $tertiary;
   width: 100vw;
-
   min-height: 1000px;
   display: flex;
   margin: 0 auto;
-  @media (min-width: $lg)  {
+  color: $onyx;
+  @media (min-width: $lg) {
     min-height: 120vh;
   }
-
-  color: $onyx;
 }
 
 .about__title {
