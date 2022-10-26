@@ -1,0 +1,94 @@
+@import "../../styles/_variables.scss";
+
+.testimonials-section {
+  @include flex-center;
+  align-items: flex-start;
+  width: 100vw;
+  height: 600px;
+  margin-top: 10%;
+  color: $onyx;
+  font-family: $didactic;
+
+  @media (min-width: $lg) {
+    align-items: center;
+    padding-top: 0%;
+    height: 100vh;
+  }
+
+  .testimonials-container {
+    @include flex-center;
+    width: 80%;
+    height: 100%;
+    position: relative;
+    flex-direction: column;
+
+    .testimonial-one {
+      font-size: 2rem;
+    }
+    .testimonial-two {
+      font-size: 1.1rem;
+    }
+    .testimonial-three {
+      font-size: 1.1rem;
+    }
+    svg {
+      position: absolute;
+      height: 120px;
+      width: 120px;
+      opacity: 0.3;
+      top: -10%;
+      left: -6%;
+    }
+
+    @media (min-width: $lg) {
+      flex-direction: row;
+
+      .testimonial-one {
+        font-size: 4rem;
+      }
+      .testimonial-two {
+        font-size: 2rem;
+      }
+      .testimonial-three {
+        font-size: 1.5rem;
+      }
+      svg {
+        height: 120px;
+        width: 120px;
+        opacity: 0.3;
+        top: 30%;
+        left: -6%;
+      }
+    }
+  }
+
+  .testimonials-column {
+    @include flex-center;
+    flex-direction: column;
+    padding-top: 20%;
+
+    @media (min-width: $lg) {
+      padding-top: 0;
+
+      padding-left: 5rem;
+    }
+  }
+
+  .testimonials-row {
+    padding-bottom: 2rem;
+
+    @media (min-width: $lg) {
+      padding-bottom: 4rem;
+    }
+  }
+
+  h6 {
+    font-size: 22px;
+    font-weight: 500;
+    clip-path: inset(100% 0% 0% 0%);
+    transition: clip-path 1s cubic-bezier(0.77, 0, 0.175, 1);
+    &.is-reveal {
+      clip-path: inset(0% 0% 0% 0%);
+    }
+  }
+}

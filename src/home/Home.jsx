@@ -12,7 +12,7 @@ import GalleryMobile from "../components/GalleryMobile";
 import About from "../components/About";
 import Footer from "../components/Footer";
 import LangSwitcher from "../components/LanguageSwitcher";
-
+import Testimonials from "../components/Testimonials";
 import "../styles/home.scss";
 
 const Home = () => {
@@ -66,9 +66,7 @@ const Home = () => {
           data-scroll-container
           ref={ref}
         >
-          {/* <Navbar /> */}
           <Hero />
-          {/* <Featured /> */}
           <Intro />
           <MobileView>
             <GalleryMobile />
@@ -77,6 +75,7 @@ const Home = () => {
             <Gallery />
           </BrowserView>
           <About />
+          <Testimonials />
           <Contact />
           <Footer />
           {isDesktop && <LangSwitcher />}

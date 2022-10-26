@@ -23,7 +23,7 @@ const About = () => {
       <div
         className="about__text"
         data-scroll
-        data-scroll-speed="-1"
+        // data-scroll-speed="-1"
         data-scroll-target="#fixed-target"
       >
         <p>{t("about_paragraph_1")}</p>
