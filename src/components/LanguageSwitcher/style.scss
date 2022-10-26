@@ -6,8 +6,9 @@
   padding: 5px;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 10px;
   border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
   color: $onyx;
   @include flex-center;
   flex-direction: column;
@@ -23,6 +24,7 @@
     border-top-left-radius: 15%;
     border-top-right-radius: 15%;
     border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
   .languages-list {
     max-height: 0;
