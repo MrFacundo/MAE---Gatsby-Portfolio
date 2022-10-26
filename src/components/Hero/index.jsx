@@ -5,6 +5,7 @@ import { useTranslation } from "gatsby-plugin-react-i18next";
 
 import ScrollAnimation from "../ScrollAnimation";
 import ScrollAnimationMobile from "../ScrollAnimationMobile";
+import LangSwitcher from "../LanguageSwitcher";
 
 import logo from "../../images/logo2primary.png";
 import "./style.scss";
@@ -46,6 +47,7 @@ export default function Hero() {
   return (
     <>
       <section id="hero" className="hero-container" data-scroll-section>
+        {isMobile && <LangSwitcher />}
         <div className="overlay absolute"></div>
         <div ref={heroText} className="hero__text" id="hero-text">
           <h2 className="top">{t("hero_title_top")}</h2>
