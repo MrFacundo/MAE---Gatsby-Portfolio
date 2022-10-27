@@ -27,7 +27,7 @@ export default function Intro() {
         ease: "power4.out",
       });
 
-      gsap.to(scrollAnimation.current, { opacity: 1, duration: 1, delay: 3 });
+      ! isMobile && gsap.to(scrollAnimation.current, { opacity: 1, duration: 1, delay: 3 });
 
     }
   }, [reveal]);

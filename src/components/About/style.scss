@@ -8,14 +8,15 @@
   margin: 0 auto;
   color: $onyx;
   @media (min-width: $lg) {
+    min-height: 100vh;
+  }
+  @media (min-width: $xl) {
     min-height: 120vh;
   }
 }
 
 .about__title {
-  font-family: $didactic;
-  font-weight: 600;
-  font-size: 3rem;
+  @include section-title;
   position: absolute;
   z-index: 5;
   top: 5%;
@@ -24,8 +25,10 @@
   @media (min-width: $lg) {
     top: 10%;
     left: 10%;
-    line-height: 6vw;
-    font-size: 5rem;
+  }
+  @media (min-width: $xl) {
+    top: 10%;
+    left: 10%;
   }
 }
 
@@ -38,7 +41,6 @@
   margin: 0 auto;
 
   @media (min-width: $lg) {
-    transform: none;
     left: 5%;
     width: 33%;
     position: relative;
@@ -46,6 +48,12 @@
     margin-top: 20%;
     font-family: $didactic;
     font-weight: 400;
+    font-size: 1.3rem;
+  }
+  @media (min-width: $xl) {
+    font-size: 1.5rem;
+  }
+  @media (min-width: $xxl) {
     font-size: 1.8rem;
   }
 }
