@@ -15,13 +15,15 @@
     line-height: 5rem;
     margin: 0 50px;
     color: $onyx;
-    font-weight: bold;
     @media (min-width: $lg) {
       font-weight: normal;
       text-align: center;
       max-width: 100%;
-      font-size: 6rem;
+      font-size: 5rem;
       line-height: 7rem;
+    }
+    @media (min-width: $xxl) {
+      font-size: 6rem;
     }
     .intro__line {
       font-family: $didactic;

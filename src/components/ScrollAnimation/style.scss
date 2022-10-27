@@ -9,10 +9,16 @@
   text-align: center;
   z-index: 3;
   &.right {
-    right: 10%;
+    right: 5%;
+    @media (min-width: $xxl) {
+      right: 10%;
+    }
   }
   &.left {
-    left: 10%;
+    left: 5%;
+    @media (min-width: $xxl) {
+      left: 10%;
+    }
   }
   &.light {
     .scroll-down-bar::before {
@@ -35,6 +41,20 @@
     .foreground {
       stroke: $onyx;
     }
+  }
+}
+
+#arrow-item {
+  transform: matrix(1, 0, 0, 1, 0, 0);
+
+  line {
+    fill: none;
+    stroke: $primary;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+  }
+  polygon {
+    fill: $primary;
   }
 }
 

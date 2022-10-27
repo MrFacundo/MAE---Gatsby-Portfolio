@@ -1,9 +1,9 @@
-// colors 
-$primary: #F7EDE2;
-$secondary: #6A5139;
-$tertiary: #E0B98F;
+// colors
+$primary: #f7ede2;
+$secondary: #6a5139;
+$tertiary: #e0b98f;
 $onyx: #464646;
-$white: #FCFCFC;
+$white: #fcfcfc;
 $black: #464646;
 
 // fonts
@@ -18,13 +18,27 @@ $xs: 320px;
 $sm: 480px;
 $md: 768px;
 $lg: 1024px;
-$xl: 1200px;
+$xl: 1366px;
+$xxl: 1920px;
+
 
 // mixins
 @mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin section-title {
+  font-family: $didactic;
+  font-weight: 600;
+  font-size: 3rem;
+  @media (min-width: $lg) {
+    font-size: 3.5rem;
+  }
+  @media (min-width: $xxl) {
+    font-size: 5rem;
+  }
 }
 // other
-$box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+$box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+  rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;

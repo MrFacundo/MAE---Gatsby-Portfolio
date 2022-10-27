@@ -16,8 +16,8 @@ const LoadingScreen = () => {
       </div>
       <div className="loading-screen__text-container">
         <span className="loading-screen__text">{t("loading_loading")}</span>
-        <div class="stage">
-          <div class="dot-typing"></div>
+        <div className="stage">
+          <div className="dot-typing"></div>
         </div>
       </div>
     </div>

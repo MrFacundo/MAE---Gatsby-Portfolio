@@ -5,7 +5,6 @@
   align-items: flex-start;
   width: 100vw;
   height: 600px;
-  margin-top: 10%;
   color: $onyx;
   font-family: $didactic;
 
@@ -36,13 +35,32 @@
       height: 120px;
       width: 120px;
       opacity: 0.3;
-      top: -10%;
+      top: -6%;
       left: -6%;
     }
 
     @media (min-width: $lg) {
       flex-direction: row;
-
+      width: 90%;
+      .testimonial-one {
+        font-size: 3rem;
+      }
+      .testimonial-two {
+        font-size: 1.5rem;
+      }
+      .testimonial-three {
+        font-size: 1.2rem;
+      }
+      svg {
+        height: 120px;
+        width: 120px;
+        opacity: 0.3;
+        top: 10%;
+        left: -6%;
+      }
+    }
+    @media (min-width: $xl) {
+      width: 80%;
       .testimonial-one {
         font-size: 4rem;
       }
@@ -84,10 +102,10 @@
 
   h6 {
     font-weight: 500;
-    clip-path: inset(100% 0% 0% 0%);
-    transition: clip-path 1s cubic-bezier(0.77, 0, 0.175, 1);
+    opacity: 0;
+    transition: opacity 1s cubic-bezier(0.77, 0, 0.175, 1);
     &.is-reveal {
-      clip-path: inset(0% 0% 0% 0%);
+      opacity: 1;
     }
   }
 }

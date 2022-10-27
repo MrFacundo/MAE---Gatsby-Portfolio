@@ -13,22 +13,30 @@
     row-gap: 5px;
     margin: 0 auto;
     @media (min-width: $lg) {
-      width: 80%;
       grid-template-columns: 33% 33% 33%;
     }
+    @media (min-width: $xl) {
+      width: 80%;
+    }
     .footer__copyright {
+      font-size: 0.8rem;
       @media (min-width: $lg) {
         text-align: left;
+      }
+      @media (min-width: $xl) {
+        font-size: 1rem;
       }
     }
   }
   .footer__made-by {
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     font-family: $bodoniModa;
     opacity: 0;
     transition: opacity 1s;
-
+    @media (min-width: $xl) {
+      font-size: 1rem;
+    }
     &.is-reveal {
       opacity: 1;
       transition: opacity 1s;
