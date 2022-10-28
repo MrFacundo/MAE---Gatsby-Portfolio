@@ -1,13 +1,13 @@
-import metodo from "./images/metodo.jpg";
-import metodo_mobile from "./images/metodo_mobile.jpg";
-import atletas from "./images/atletas.jpg";
-import atletas_mobile from "./images/atletas_mobile.jpg";
-import general from "./images/general.jpg";
-import general_mobile from "./images/general_mobile.jpg";
-import limpiezas from "./images/limpiezas.jpg";
-import limpiezas_mobile from "./images/limpiezas_mobile.jpg";
-import registros from "./images/registros.jpg";
-import registros_mobile from "./images/registros_mobile.jpg";
+import metodo from "./images/metodo.webp";
+import metodo_mobile from "./images/metodo_mobile.webp";
+import atletas from "./images/atletas.webp";
+import atletas_mobile from "./images/atletas_mobile.webp";
+import general from "./images/general.webp";
+import general_mobile from "./images/general_mobile.webp";
+import limpiezas from "./images/limpiezas.webp";
+import limpiezas_mobile from "./images/limpiezas_mobile.webp";
+import registros from "./images/registros.webp";
+import registros_mobile from "./images/registros_mobile.webp";
 
 
 
