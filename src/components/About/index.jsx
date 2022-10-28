@@ -1,12 +1,10 @@
 import React from "react";
-import { useMediaQuery } from "react-responsive";
 import { useTranslation } from "gatsby-plugin-react-i18next";
+import { StaticImage } from "gatsby-plugin-image";
 
-import img1 from "../../images/IMG_9806.jpg";
 import "./style.scss";
 
 const About = () => {
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   const { t } = useTranslation();
 
@@ -31,14 +29,22 @@ const About = () => {
         <p>{t("about_paragraph_2")}</p>
       </div>
       <div className="about__image">
-        <img
+        <StaticImage
+          src="../../images/about.jpg"
+          alt={t("about_title")}
+          formats={["auto", "webp", "avif"]}
+          className="about_image-1"
+          loading="eager"
+        />
+
+        {/* <img
           data-scroll
           data-scroll-speed={isMobile ? 0.1 : -1.5}
           data-scroll-target="#fixed-target"
           src={img1}
-          alt="About Us"
+          alt={t("about_title")}
           className="about_image-1"
-        />
+        /> */}
       </div>
     </section>
   );

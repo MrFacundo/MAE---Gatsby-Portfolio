@@ -1,9 +1,14 @@
-import image1 from "./images/atletas.jpg";
-import image2 from "./images/general.jpg";
-import image3 from "./images/limpiezas.jpg";
-import image4 from "./images/registros.jpg";
-import image5 from "./images/metodo.jpg";
-import image6 from "./images/atletas_mobile.jpg";
+import metodo from "./images/metodo.jpg";
+import metodo_mobile from "./images/metodo_mobile.jpg";
+import atletas from "./images/atletas.jpg";
+import atletas_mobile from "./images/atletas_mobile.jpg";
+import general from "./images/general.jpg";
+import general_mobile from "./images/general_mobile.jpg";
+import limpiezas from "./images/limpiezas.jpg";
+import limpiezas_mobile from "./images/limpiezas_mobile.jpg";
+import registros from "./images/registros.jpg";
+import registros_mobile from "./images/registros_mobile.jpg";
+
 
 
 const gallery_items = [
@@ -15,8 +20,8 @@ const gallery_items = [
     excerpt_mobile:
       "gallery_item_1_text_mobile",
 
-    img_src: image5,
-    img_src_mobile: "",
+    img_src: metodo,
+    img_src_mobile: metodo_mobile,
   },
   {
     title: "gallery_item_2_title",
@@ -25,8 +30,8 @@ const gallery_items = [
       "gallery_item_2_text",
     excerpt_mobile:
       "gallery_item_2_text_mobile",
-    img_src: image1,
-    img_src_mobile: image6,
+    img_src: atletas,
+    img_src_mobile: atletas_mobile,
 
   },
   {
@@ -36,8 +41,8 @@ const gallery_items = [
       "gallery_item_3_text",
     excerpt_mobile:
       "gallery_item_3_text_mobile",
-    img_src: image2,
-    img_src_mobile: "",
+    img_src: general,
+    img_src_mobile: general_mobile,
   },
   {
     title: "gallery_item_4_title",
@@ -46,8 +51,8 @@ const gallery_items = [
       "gallery_item_4_text",
     excerpt_mobile:
       "gallery_item_4_text_mobile",
-    img_src: image3,
-    img_src_mobile: "",
+    img_src: limpiezas,
+    img_src_mobile: limpiezas_mobile,
   },
   {
     title: "gallery_item_5_title",
@@ -56,8 +61,8 @@ const gallery_items = [
       "gallery_item_5_text",
     excerpt_mobile:
       "gallery_item_5_text_mobile",
-    img_src: image4,
-    img_src_mobile: "",
+    img_src: registros,
+    img_src_mobile: registros_mobile,
   },
 ];
 
