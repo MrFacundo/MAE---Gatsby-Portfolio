@@ -44,20 +44,6 @@
   }
 }
 
-#arrow-item {
-  transform: matrix(1, 0, 0, 1, 0, 0);
-
-  line {
-    fill: none;
-    stroke: $primary;
-    stroke-width: 2;
-    stroke-miterlimit: 10;
-  }
-  polygon {
-    fill: $primary;
-  }
-}
-
 .scroll-down-bar {
   background: transparent;
   top: 50%;

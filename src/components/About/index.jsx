@@ -36,15 +36,6 @@ const About = () => {
           className="about_image-1"
           loading="eager"
         />
-
-        {/* <img
-          data-scroll
-          data-scroll-speed={isMobile ? 0.1 : -1.5}
-          data-scroll-target="#fixed-target"
-          src={img1}
-          alt={t("about_title")}
-          className="about_image-1"
-        /> */}
       </div>
     </section>
   );

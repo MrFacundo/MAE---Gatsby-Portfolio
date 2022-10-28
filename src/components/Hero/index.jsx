@@ -2,12 +2,12 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { isMobile, BrowserView, MobileView } from "react-device-detect";
 import { useTranslation } from "gatsby-plugin-react-i18next";
+import { StaticImage } from "gatsby-plugin-image";
 
 import ScrollAnimation from "../ScrollAnimation";
 import ScrollAnimationMobile from "../ScrollAnimationMobile";
 import LangSwitcher from "../LanguageSwitcher";
 
-import logo from "../../images/logo2primary.png";
 import "./style.scss";
 
 export default function Hero() {
@@ -24,7 +24,7 @@ export default function Hero() {
         .timeline()
         .to(".top", { opacity: 1, duration: 2 })
         .to(".line", { opacity: 1, duration: 2 }, 0.75)
-        .to(".hero__logo", { opacity: 1, duration: 2 }, 1.5);
+        .to(".hero__logo", { opacity: 1, scale: 1, y: 0, duration: 1 }, 1.5);
 
       if (isMobile) {
         tl.current.to(
@@ -76,7 +76,14 @@ export default function Hero() {
             >
               {t("hero_title_scroll_3")}
             </h2>
-            <img className="hero__logo" src={logo} alt="" />
+            <StaticImage
+              src="../../images/logo2primary.png"
+              alt="logo"
+              formats={["auto", "webp", "avif"]}
+              className="hero__logo"
+              loading="eager"
+              width={140}
+            />
           </div>
         </div>
         <MobileView>
