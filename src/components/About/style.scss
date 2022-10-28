@@ -7,6 +7,9 @@
   display: flex;
   margin: 0 auto;
   color: $onyx;
+  @media (min-width: $md) {
+    min-height: 400px;
+  }
   @media (min-width: $lg) {
     min-height: 100vh;
   }
@@ -40,7 +43,14 @@
   font-size: 1.3rem;
   margin: 0 auto;
 
+  @media (min-width: $md) {
+    left: 42%;
+    width: 48%;
+    top: 25%;
+  }
+
   @media (min-width: $lg) {
+    top: 50%;
     left: 5%;
     width: 33%;
     position: relative;
@@ -71,6 +81,12 @@
     left: 27%;
     width: 70vw;
     box-shadow: $box-shadow;
+
+
+    @media (min-width: $md) {
+      width: 30vw;
+      left: 16%;
+    }
 
     @media (min-width: $lg) {
       height: auto;

@@ -11,10 +11,12 @@
   background-size: cover;
   background-position-y: center;
   background-position-x: center;
-  @media (min-width: $lg) {
-    height: 100vh;
+  @media (min-width: $md) {
     background-size: cover;
     background-image: url("../../images/IMG_9808.jpg");
+  }
+  @media (min-width: $lg) {
+    height: 100vh;
   }
 }
 

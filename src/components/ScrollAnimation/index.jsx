@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./style.scss";
 
 const ScrollAnimation = React.forwardRef((props, scrollAnimation) => (
@@ -17,7 +18,7 @@ const ScrollAnimation = React.forwardRef((props, scrollAnimation) => (
           cy="62.5"
           cx="62.5"
           strokeWidth="1"
-        />
+        />>
         <ellipse
           className="foreground"
           ry="45"

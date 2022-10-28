@@ -3,13 +3,10 @@ import useOnScreen from "../../hooks/useOnScreen";
 import cn from "classnames";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 
-
 import "./style.scss";
-import gallery_items from "../../data"
-
+import gallery_items from "../../data";
 
 function GalleryItemMobile({
-  img_src,
   img_src_mobile,
   excerpt_mobile,
   subtitle,
@@ -30,18 +27,10 @@ function GalleryItemMobile({
           <h1 className="gallery-info-title-mobile">{t(title)}</h1>
           <h2 className="gallery-info-subtitle-mobile">{t(subtitle)}</h2>
         </div>
-        <div
-          className="gallery-item-image-mobile"
-          style={{
-            backgroundImage:
-              img_src_mobile
-                ? `url(${img_src_mobile})`
-                : `url(${img_src})`,
-          }}
-        ></div>
-        <p className="gallery-info-excerpt-mobile">
-          {t(excerpt_mobile)}
-        </p>
+        <div className="gallery__image-text-wrapper">
+          <img src={img_src_mobile} alt="{t(title)}" className="gallery-item-image-mobile"/>
+          <p className="gallery-info-excerpt-mobile">{t(excerpt_mobile)}</p>
+        </div>
       </div>
     </div>
   );
@@ -51,7 +40,10 @@ export default function GalleryMobile() {
   const ref = useRef(null);
 
   return (
-    <section data-scroll-section className="section-wrapper gallery-wrap-mobile">
+    <section
+      data-scroll-section
+      className="section-wrapper gallery-wrap-mobile"
+    >
       <div className="gallery-mobile" ref={ref}>
         {gallery_items.map((item) => (
           <GalleryItemMobile key={item.img_src} {...item} />
