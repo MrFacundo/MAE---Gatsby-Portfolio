@@ -15,19 +15,19 @@ export default function Testimonials() {
     <section className="testimonials-section" data-scroll-section>
       <div className="testimonials-container">
         <FontAwesomeIcon icon={faQuoteLeft} />
-        <h6 className="testimonial-one" data-scroll data-scroll-speed={isMobile ? 0.6 : 1}>{t("testimonial_1")}
+        <p className="testimonial-one" data-scroll data-scroll-speed={isMobile ? 0.6 : 1}>{t("testimonial_1")}
           
-        </h6>
+        </p>
         <div className="testimonials-column">
           <div className="testimonials-row">
-            <h6 className="testimonial-two" data-scroll>{t("testimonial_2")}
+            <p className="testimonial-two" data-scroll>{t("testimonial_2")}
               
-            </h6>
+            </p>
           </div>
           <div className="testimonials-row">
-            <h6 className="testimonial-three" data-scroll>{t("testimonial_3")}
+            <p className="testimonial-three" data-scroll>{t("testimonial_3")}
            
-            </h6>
+            </p>
           </div>
         </div>
       </div>

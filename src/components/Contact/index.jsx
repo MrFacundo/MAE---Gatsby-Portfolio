@@ -25,6 +25,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.instagram.com/danai.eguiguren/"
+              aria-label="Instagram"
             >
               {" "}
               <FontAwesomeIcon icon={faInstagram} />
