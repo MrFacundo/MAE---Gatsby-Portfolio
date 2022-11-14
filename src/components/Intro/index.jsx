@@ -2,12 +2,15 @@ import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import useOnScreen from "../../hooks/useOnScreen";
 import { isMobile } from "react-device-detect";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
 import ScrollAnimation from "../ScrollAnimation";
 
 import "./style.scss";
 
 export default function Intro() {
+  const { t } = useTranslation();
+
   const ref = useRef(null);
   const scrollAnimation = useRef();
 
@@ -35,11 +38,11 @@ export default function Intro() {
   return (
     <section id="intro" className="intro__section" data-scroll-section>
       <p ref={ref} className="intro__text">
-        <span className="intro__line">Hazte consciente,</span>
+        <span className="intro__line">{t("intro_line_1")}</span>
         <br />
-        <span className="intro__line">vive, </span>
-        <span className="intro__line">trasciende. </span>
-        <span className="intro__line">Conquista tus metas.</span>
+        <span className="intro__line">{t("intro_line_2")}</span>
+        <span className="intro__line">{t("intro_line_3")}</span>
+        <span className="intro__line">{t("intro_line_4")}</span>
       </p>
       {!isMobile && <ScrollAnimation scrollTo="#gallery" position="left" theme='dark' ref={scrollAnimation} />}
     </section>
