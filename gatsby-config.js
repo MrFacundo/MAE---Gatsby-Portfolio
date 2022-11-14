@@ -37,8 +37,8 @@ module.exports = {
         localeJsonSourceName: `locale`,
         languages: [`pt`, `es`, `en`],
         defaultLanguage: `pt`,
-        siteUrl: `http://localhost:8000/`,
-        redirect: false,
+        siteUrl: `https://maegatsbyportfoliomain48188.gatsbyjs.io/`,
+        // redirect: false,
         i18nextOptions: {
           interpolation: {
             escapeValue: false,
