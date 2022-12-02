@@ -21,7 +21,7 @@ html {
   backface-visibility: hidden;
   overflow: hidden;
   &.ios-overflow{
-  //  overflow-x: scroll; /* Must be 'scroll' not 'auto' */
+  overflow-x: scroll; /* Must be 'scroll' not 'auto' */
   -webkit-overflow-scrolling: touch;
   }
 }
