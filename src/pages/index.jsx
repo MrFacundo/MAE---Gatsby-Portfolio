@@ -19,7 +19,7 @@ const Index = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <meta name="description" content={t("head_page_title")} />
+        <meta name="description" content={t("head_page_description")} />
         <title>{t("head_page_title")}</title>
       </Helmet>
       <HomeLazy />
