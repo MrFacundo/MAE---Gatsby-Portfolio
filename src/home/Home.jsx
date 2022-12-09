@@ -69,12 +69,12 @@ const Home = () => {
         >
           <Hero />
           <Intro />
-          <MobileView>
+          {/* <MobileView> */}
             <GalleryMobile />
-          </MobileView>
-          <BrowserView>
+          {/* </MobileView> */}
+          {/* <BrowserView>
             <Gallery />
-          </BrowserView>
+          </BrowserView> */}
           <About />
           <Testimonials />
           <Contact />
