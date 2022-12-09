@@ -37,6 +37,9 @@
     @media (min-width: $xl) {
       font-size: 1rem;
     }
+    a {
+      color: $primary;
+    }
     &.is-reveal {
       opacity: 1;
       transition: opacity 1s;
