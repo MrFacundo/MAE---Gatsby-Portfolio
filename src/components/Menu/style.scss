@@ -1,21 +1,21 @@
 .menu {
-  display: flex;
-  justify-content: space-between;
-  letter-spacing: 1px;
-  font-family: "Syncopate", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  cursor: pointer;
-  flex-direction: column;
+	display: flex;
+	justify-content: space-between;
+	letter-spacing: 1px;
+	font-family: "Syncopate", sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	cursor: pointer;
+	flex-direction: column;
 
-  li {
-    padding: 20px;
-    padding-left: 0;
+	li {
+		padding: 20px;
+		padding-left: 0;
 
-    font-size: 1rem;
-    list-style: none;
-  }
+		font-size: 1rem;
+		list-style: none;
+	}
 }
 li:first-child {
-  padding-top: 40px;
+	padding-top: 40px;
 }

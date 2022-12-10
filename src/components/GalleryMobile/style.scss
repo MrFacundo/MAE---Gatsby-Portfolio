@@ -1,122 +1,124 @@
 @import "../../styles/_variables.scss";
 
 .gallery-wrap-mobile {
-  background-color: $primary;
-  padding: 0;
+	background-color: $primary;
+	padding: 0;
 }
 .gallery-mobile {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
 
-  .gallery-item-wrapper-mobile {
-    display: flex;
-    width: 100%;
-    padding-bottom: 2rem;
+	.gallery-item-wrapper-mobile {
+		display: flex;
+		width: 100%;
+		padding-bottom: 2rem;
 
-    &.is-reveal {
-      .gallery-item-image-mobile {
-        transform: scale(1);
-      }
-    }
+		&.is-reveal {
+			.gallery-item-image-mobile {
+				transform: scale(1);
+			}
+		}
 
-    .gallery-item-mobile {
-      @include flex-center;
-      flex-direction: column;
-      width: 100%;
-      min-height: 600px;
-      color: $onyx;
-      @media (min-width: $md) {
-        min-height: 300px;
-        width: 90%;
-        margin: 0 auto;
-      }
-    }
+		.gallery-item-mobile {
+			@include flex-center;
+			flex-direction: column;
+			width: 100%;
+			min-height: 600px;
+			color: $onyx;
+			@media (min-width: $md) {
+				min-height: 300px;
+				width: 90%;
+				margin: 0 auto;
+			}
+		}
 
-    .gallery-item-heading-mobile {
-      padding-bottom: 2rem;
-      width: 100%;
+		.gallery-item-heading-mobile {
+			padding-bottom: 2rem;
+			width: 100%;
 
-      .gallery-info-title-mobile {
-        line-height: 2rem;
-        font-family: $didactic;
-        font-weight: 600;
-        font-size: 2rem;
-        -webkit-font-smoothing: antialiased;
+			.gallery-info-title-mobile {
+				line-height: 2rem;
+				font-family: $didactic;
+				font-weight: 600;
+				font-size: 2rem;
+				-webkit-font-smoothing: antialiased;
 
-        @media (min-width: $sm) {
-          line-height: 3rem;
-          font-size: 3rem;
-        }
+				@media (min-width: $sm) {
+					line-height: 3rem;
+					font-size: 3rem;
+				}
 
-        @media (min-width: $md) {
-          width: 90%;
-        }        @media (min-width: $sm) {
-          line-height: 3rem;
-          font-size: 3rem;
-        }
-      }
+				@media (min-width: $md) {
+					width: 90%;
+				}
+				@media (min-width: $sm) {
+					line-height: 3rem;
+					font-size: 3rem;
+				}
+			}
 
-      .gallery-info-subtitle-mobile {
-        line-height: 2rem;
-        font-size: 2rem;
-        color: transparent;
-        font-family: "Bodoni Moda";
-        font-weight: 400;
-        -webkit-font-smoothing: antialiased;
-        -webkit-text-stroke: 2px $tertiary;
+			.gallery-info-subtitle-mobile {
+				line-height: 2rem;
+				font-size: 2rem;
+				color: transparent;
+				font-family: "Bodoni Moda";
+				font-weight: 400;
+				-webkit-font-smoothing: antialiased;
+				-webkit-text-stroke: 2px $tertiary;
 
-        @media (min-width: $sm) {
-          line-height: 3rem;
-          font-size: 3rem;
-        }
+				@media (min-width: $sm) {
+					line-height: 3rem;
+					font-size: 3rem;
+				}
 
-        @media (min-width: $lg) {
-          line-height: 5rem;
-          font-size: 5rem;
-        }
-      }
-    }
+				@media (min-width: $lg) {
+					line-height: 5rem;
+					font-size: 5rem;
+				}
+			}
+		}
 
-    .gallery-info-excerpt-mobile {
-      justify-self: auto;
-      width: 85vw;
-      line-height: 24px;
-      font-family: $didactic;
-      font-weight: 400;
-      font-size: 1.25rem;
-      -webkit-font-smoothing: antialiased;
-      margin-top: 2rem;
-      @media (min-width: $md) {
-        padding-right: 10%;
-        font-size: 1.5rem;
-      }
-    }
-  }
+		.gallery-info-excerpt-mobile {
+			justify-self: auto;
+			width: 85vw;
+			line-height: 24px;
+			font-family: $didactic;
+			font-weight: 400;
+			font-size: 1.25rem;
+			-webkit-font-smoothing: antialiased;
+			margin-top: 2rem;
+			@media (min-width: $md) {
+				padding-right: 10%;
+				font-size: 1.5rem;
+			}
+		}
+	}
 
-  .gallery__image-text-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	.gallery__image-text-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
-    @media (min-width: $md) {
-      align-items: normal;
-      width: 100%;
-      flex-direction: row-reverse;
-      min-height: 250px;
-    }
-  }
-  .gallery-item-image-mobile {
-    width: 70%;
-    height: auto;
-    box-shadow: $box-shadow;
-    transform-origin: center;
-    will-change: transform;
-    transform: scale(0.95);
-    transition: transform 1.5s cubic-bezier(0.77, 0, 0.175, 1), filter 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-    @media (min-width: $md) {
-      // min-height: 70%;
-    }
-  }
+		@media (min-width: $md) {
+			align-items: normal;
+			width: 100%;
+			flex-direction: row-reverse;
+			min-height: 250px;
+		}
+	}
+	.gallery-item-image-mobile {
+		width: 70%;
+		height: auto;
+		box-shadow: $box-shadow;
+		transform-origin: center;
+		will-change: transform;
+		transform: scale(0.95);
+		transition: transform 1.5s cubic-bezier(0.77, 0, 0.175, 1),
+			filter 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+		@media (min-width: $md) {
+			// min-height: 70%;
+		}
+	}
 }

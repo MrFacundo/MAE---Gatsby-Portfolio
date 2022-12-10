@@ -1,48 +1,48 @@
 @import "../../styles/_variables.scss";
 
 .footer {
-  text-align: center;
-  padding: 20px 0;
-  background-color: $secondary;
-  color: $primary;
+	text-align: center;
+	padding: 20px 0;
+	background-color: $secondary;
+	color: $primary;
 
-  .footer__container {
-    width: 90%;
-    display: grid;
-    grid-template-rows: 50%;
-    row-gap: 5px;
-    margin: 0 auto;
-    @media (min-width: $lg) {
-      grid-template-columns: 33% 33% 33%;
-    }
-    @media (min-width: $xl) {
-      width: 80%;
-    }
-    .footer__copyright {
-      font-size: 0.8rem;
-      @media (min-width: $lg) {
-        text-align: left;
-      }
-      @media (min-width: $xl) {
-        font-size: 1rem;
-      }
-    }
-  }
-  .footer__made-by {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    font-family: $bodoniModa;
-    opacity: 0;
-    transition: opacity 1s;
-    @media (min-width: $xl) {
-      font-size: 1rem;
-    }
-    a {
-      color: $primary;
-    }
-    &.is-reveal {
-      opacity: 1;
-      transition: opacity 1s;
-    }
-  }
+	&__container {
+		width: 90%;
+		display: grid;
+		grid-template-rows: 50%;
+		row-gap: 5px;
+		margin: 0 auto;
+		@media (min-width: $lg) {
+			grid-template-columns: 33% 33% 33%;
+		}
+		@media (min-width: $xl) {
+			width: 80%;
+		}
+		.footer__copyright {
+			font-size: 0.8rem;
+			@media (min-width: $lg) {
+				text-align: left;
+			}
+			@media (min-width: $xl) {
+				font-size: 1rem;
+			}
+		}
+	}
+	&__made-by {
+		font-size: 0.8rem;
+		text-transform: uppercase;
+		font-family: $bodoniModa;
+		opacity: 0;
+		transition: opacity 1s;
+		@media (min-width: $xl) {
+			font-size: 1rem;
+		}
+		a {
+			color: $primary;
+		}
+		&.is-reveal {
+			opacity: 1;
+			transition: opacity 1s;
+		}
+	}
 }
