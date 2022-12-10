@@ -5,7 +5,9 @@ import {
   faInstagram,
   faFacebook,
   faYoutube,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
+import { isMobile } from "react-device-detect";
 
 import logo from "../../images/logo2primary.png";
 import "./style.scss";
@@ -47,6 +49,17 @@ export default function Contact() {
             <span className="email-title">Email: </span>
             <p className="email-content">info@mariadanaieguiguren.com</p>
           </div>
+          <div className="contacts__whatsapp">
+            {isMobile && (
+              <a
+                aria-label="Chat on WhatsApp"
+                href="https://wa.me/00351913547520"
+              >
+                 <FontAwesomeIcon icon={faWhatsapp} /> <span>WhatsApp </span>
+              </a>
+            )}
+          </div>
+
           <div className="contacts__phone">
             <span className="phone-title">{t("contact_phone")}</span>
             <p className="phone-content">+351 913 547 520</p>

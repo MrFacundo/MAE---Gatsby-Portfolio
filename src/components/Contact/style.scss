@@ -41,9 +41,15 @@
       font-size: 1.3rem;
     }
     .contacts__email,
+    .contacts__whatsapp,
     .contacts__phone,
     .contacts__address {
       padding: 20px;
+      svg {
+        height: 30px;
+        width: 30px;
+        color: $primary;
+      }
     }
     span {
       font-weight: 600;
