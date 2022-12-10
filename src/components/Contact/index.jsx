@@ -55,7 +55,7 @@ export default function Contact() {
 						{isMobile && (
 							<a
 								aria-label="Chat on WhatsApp"
-								href="https://wa.me/00351913547520"
+								href="https://wa.me/351913547520"
 							>
 								<FontAwesomeIcon icon={faWhatsapp} />{" "}
 								<span>WhatsApp </span>
