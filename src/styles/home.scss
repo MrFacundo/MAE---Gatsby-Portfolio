@@ -7,48 +7,47 @@
 @import "./_variables.scss";
 
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: $primary;
-  overflow: hidden;
+	font-family: "Poppins", sans-serif;
+	background-color: $primary;
+	overflow: hidden;
 }
 
 html {
-  height: -webkit-fill-available;
+	height: -webkit-fill-available;
 }
 
 .main-container {
-  position: relative;
-  backface-visibility: hidden;
-  overflow: hidden;
-  &.ios-overflow{
-  overflow-x: scroll; /* Must be 'scroll' not 'auto' */
-  -webkit-overflow-scrolling: touch;
-  }
+	position: relative;
+	backface-visibility: hidden;
+	overflow: hidden;
+	&.ios-overflow {
+		overflow-x: scroll; /* Must be 'scroll' not 'auto' */
+		-webkit-overflow-scrolling: touch;
+	}
 }
 
 html.has-scroll-smooth {
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  position: fixed;
-  right: 0;
-  top: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	position: fixed;
+	right: 0;
+	top: 0;
 }
-
 
 section {
-  padding: 80px 0;
-  .section-header {
-    margin-bottom: 50px;
-  }
+	padding: 80px 0;
+	.section-header {
+		margin-bottom: 50px;
+	}
 }
 .absolute {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
 }
 a,
 a:hover,
@@ -56,16 +55,16 @@ a:focus,
 a:active,
 a:visited,
 a:enabled,
-a:focus-visible
- {
-  border: none;
-  text-decoration: none;
-  color: inherit;
-  outline : none;
+a:focus-visible {
+	border: none;
+	text-decoration: none;
+	color: inherit;
+	outline: none;
 }
 
-
-button, input[type="submit"], input[type="reset"] {
+button,
+input[type="submit"],
+input[type="reset"] {
 	background: none;
 	color: inherit;
 	border: none;

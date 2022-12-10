@@ -7,14 +7,14 @@ Visit the website at maegatsbyportfoliomain48188.gatsbyjs.io/
 
 # Built with
 
-- React
-- Gatsby
-- Graphql
-- i18next
-- Node-sass
-- GSAP
-- Locomotive Scroll
-- FontAwesome
+-   React
+-   Gatsby
+-   Graphql
+-   i18next
+-   Node-sass
+-   GSAP
+-   Locomotive Scroll
+-   FontAwesome
 
 Install and run the development version:
 

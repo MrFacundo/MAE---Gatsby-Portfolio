@@ -1,22 +1,22 @@
 @import "../../styles/_variables.scss";
 
 .navbar-container {
-  z-index: 2;
-  display: flex;
-  width: 100vw;
-  position: fixed;
-  justify-content: center;
-  padding: 50px 0;
-  .navbar {
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    letter-spacing: 1px;
-    font-family: "Syncopate", sans-serif;
-    color: $primary;
-    font-weight: 600;
-    text-transform: uppercase;
-    width: 90%;
-    cursor: pointer;
-  }
+	z-index: 2;
+	display: flex;
+	width: 100vw;
+	position: fixed;
+	justify-content: center;
+	padding: 50px 0;
+	.navbar {
+		font-size: 1.5rem;
+		display: flex;
+		justify-content: space-between;
+		letter-spacing: 1px;
+		font-family: "Syncopate", sans-serif;
+		color: $primary;
+		font-weight: 600;
+		text-transform: uppercase;
+		width: 90%;
+		cursor: pointer;
+	}
 }

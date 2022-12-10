@@ -1,82 +1,81 @@
 @import "../../styles/_variables.scss";
 
 .scroll-animation-mobile {
-  opacity: 0;
+	opacity: 0;
 }
 .scroll-down-mobile {
-  bottom: 10%;
-  height: 100px;
-  margin: 0 auto;
-  position: absolute;
-  right: 10%;
-  text-align: center;
-  z-index: 3;
+	bottom: 10%;
+	height: 100px;
+	margin: 0 auto;
+	position: absolute;
+	right: 10%;
+	text-align: center;
+	z-index: 3;
 }
 
 .scroll-down-bar-mobile {
-  background: transparent;
-  top: 50%;
-  display: inline-block;
-  height: 150px;
-  left: 0;
-  margin: 0 auto;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  width: 1px;
+	background: transparent;
+	top: 50%;
+	display: inline-block;
+	height: 150px;
+	left: 0;
+	margin: 0 auto;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	width: 1px;
 }
 .scroll-down-bar-mobile::before {
-  animation: scrollDown 2.5s infinite;
-  background: $primary;
-  content: "";
-  display: inline-block;
-  height: 60px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 2px;
-  
-  z-index: 1;
-}
+	animation: scrollDown 2.5s infinite;
+	background: $primary;
+	content: "";
+	display: inline-block;
+	height: 60px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 2px;
 
+	z-index: 1;
+}
 
 @-moz-keyframes scrollDown {
-  0% {
-    transform: translate3d(0, -128px, 0);
-  }
+	0% {
+		transform: translate3d(0, -128px, 0);
+	}
 
-  100% {
-    animation-timing-function: ease-in;
-    transform: translate3d(0, 150px, 0);
-  }
+	100% {
+		animation-timing-function: ease-in;
+		transform: translate3d(0, 150px, 0);
+	}
 }
 @-webkit-keyframes scrollDown {
-  0% {
-    transform: translate3d(0, -128px, 0);
-  }
+	0% {
+		transform: translate3d(0, -128px, 0);
+	}
 
-  100% {
-    animation-timing-function: ease-in;
-    transform: translate3d(0, 150px, 0);
-  }
+	100% {
+		animation-timing-function: ease-in;
+		transform: translate3d(0, 150px, 0);
+	}
 }
 @-o-keyframes scrollDown {
-  0% {
-    transform: translate3d(0, -128px, 0);
-  }
+	0% {
+		transform: translate3d(0, -128px, 0);
+	}
 
-  100% {
-    animation-timing-function: ease-in;
-    transform: translate3d(0, 150px, 0);
-  }
+	100% {
+		animation-timing-function: ease-in;
+		transform: translate3d(0, 150px, 0);
+	}
 }
 @keyframes scrollDown {
-  0% {
-    transform: translate3d(0, -128px, 0);
-  }
+	0% {
+		transform: translate3d(0, -128px, 0);
+	}
 
-  100% {
-    animation-timing-function: ease-in;
-    transform: translate3d(0, 150px, 0);
-  }
+	100% {
+		animation-timing-function: ease-in;
+		transform: translate3d(0, 150px, 0);
+	}
 }

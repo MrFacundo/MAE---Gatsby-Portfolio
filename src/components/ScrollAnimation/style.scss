@@ -1,142 +1,142 @@
 @import "../../styles/_variables.scss";
 
 .scroll-animation {
-  opacity: 0;
-  bottom: 10%;
-  height: 100px;
-  margin: 0 auto;
-  position: absolute;
-  text-align: center;
-  z-index: 3;
-  &.right {
-    right: 5%;
-    @media (min-width: $xxl) {
-      right: 10%;
-    }
-  }
-  &.left {
-    left: 5%;
-    @media (min-width: $xxl) {
-      left: 10%;
-    }
-  }
-  &.light {
-    .scroll-down-bar::before {
-      background: $primary;
-    }
-    .background {
-      stroke: $primary;
-    }
-    .foreground {
-      stroke: $primary;
-    }
-  }
-  &.dark {
-    .scroll-down-bar::before {
-      background: $onyx;
-    }
-    .background {
-      stroke: $onyx;
-    }
-    .foreground {
-      stroke: $onyx;
-    }
-  }
+	opacity: 0;
+	bottom: 10%;
+	height: 100px;
+	margin: 0 auto;
+	position: absolute;
+	text-align: center;
+	z-index: 3;
+	&.right {
+		right: 5%;
+		@media (min-width: $xxl) {
+			right: 10%;
+		}
+	}
+	&.left {
+		left: 5%;
+		@media (min-width: $xxl) {
+			left: 10%;
+		}
+	}
+	&.light {
+		.scroll-down-bar::before {
+			background: $primary;
+		}
+		.background {
+			stroke: $primary;
+		}
+		.foreground {
+			stroke: $primary;
+		}
+	}
+	&.dark {
+		.scroll-down-bar::before {
+			background: $onyx;
+		}
+		.background {
+			stroke: $onyx;
+		}
+		.foreground {
+			stroke: $onyx;
+		}
+	}
 }
 
 .scroll-down-bar {
-  background: transparent;
-  top: 50%;
-  display: inline-block;
-  height: 150px;
-  left: 0;
-  margin: 0 auto;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  width: 1px;
+	background: transparent;
+	top: 50%;
+	display: inline-block;
+	height: 150px;
+	left: 0;
+	margin: 0 auto;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	width: 1px;
 }
 .scroll-down-bar::before {
-  animation: scrollDown 2.5s infinite;
-  content: "";
-  display: inline-block;
-  height: 60px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 2px;
-  z-index: 1;
+	animation: scrollDown 2.5s infinite;
+	content: "";
+	display: inline-block;
+	height: 60px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 2px;
+	z-index: 1;
 }
 
 .circle {
-  height: 124px;
-  width: 124px;
+	height: 124px;
+	width: 124px;
 }
 
 .background {
-  fill: transparent;
-  transition: all 200ms ease;
+	fill: transparent;
+	transition: all 200ms ease;
 }
 
 .foreground {
-  fill: transparent;
-  stroke-dasharray: 377;
-  stroke-dashoffset: 377;
-  transform-origin: 50% 50%;
-  transform: rotate(-90deg);
-  transition: all 800ms ease;
+	fill: transparent;
+	stroke-dasharray: 377;
+	stroke-dashoffset: 377;
+	transform-origin: 50% 50%;
+	transform: rotate(-90deg);
+	transition: all 800ms ease;
 }
 
 a:hover {
-  .foreground {
-    stroke-dashoffset: 0;
-    transform: rotate(90deg);
-  }
-  .scroll-down-bar::before {
-    animation: scrollDown 1.5s infinite;
-  }
-  .scroll-down-bar {
-    width: 2px;
-  }
+	.foreground {
+		stroke-dashoffset: 0;
+		transform: rotate(90deg);
+	}
+	.scroll-down-bar::before {
+		animation: scrollDown 1.5s infinite;
+	}
+	.scroll-down-bar {
+		width: 2px;
+	}
 }
 
 @-moz-keyframes scrollDown {
-  0% {
-    transform: translate3d(0, -128px, 0);
-  }
+	0% {
+		transform: translate3d(0, -128px, 0);
+	}
 
-  100% {
-    animation-timing-function: ease-in;
-    transform: translate3d(0, 150px, 0);
-  }
+	100% {
+		animation-timing-function: ease-in;
+		transform: translate3d(0, 150px, 0);
+	}
 }
 @-webkit-keyframes scrollDown {
-  0% {
-    transform: translate3d(0, -128px, 0);
-  }
+	0% {
+		transform: translate3d(0, -128px, 0);
+	}
 
-  100% {
-    animation-timing-function: ease-in;
-    transform: translate3d(0, 150px, 0);
-  }
+	100% {
+		animation-timing-function: ease-in;
+		transform: translate3d(0, 150px, 0);
+	}
 }
 @-o-keyframes scrollDown {
-  0% {
-    transform: translate3d(0, -128px, 0);
-  }
+	0% {
+		transform: translate3d(0, -128px, 0);
+	}
 
-  100% {
-    animation-timing-function: ease-in;
-    transform: translate3d(0, 150px, 0);
-  }
+	100% {
+		animation-timing-function: ease-in;
+		transform: translate3d(0, 150px, 0);
+	}
 }
 @keyframes scrollDown {
-  0% {
-    transform: translate3d(0, -128px, 0);
-  }
+	0% {
+		transform: translate3d(0, -128px, 0);
+	}
 
-  100% {
-    animation-timing-function: ease-in;
-    transform: translate3d(0, 150px, 0);
-  }
+	100% {
+		animation-timing-function: ease-in;
+		transform: translate3d(0, 150px, 0);
+	}
 }

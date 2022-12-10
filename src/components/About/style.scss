@@ -1,98 +1,96 @@
 @import "../../styles/_variables.scss";
 
-.about-section {
-  background-color: $tertiary;
-  width: 100vw;
-  min-height: 1000px;
-  display: flex;
-  margin: 0 auto;
-  color: $onyx;
-  @media (min-width: $md) {
-    min-height: 400px;
-  }
-  @media (min-width: $lg) {
-    min-height: 100vh;
-  }
-  @media (min-width: $xl) {
-    min-height: 120vh;
-  }
-}
+.about {
+	background-color: $tertiary;
+	width: 100vw;
+	min-height: 1000px;
+	display: flex;
+	margin: 0 auto;
+	color: $onyx;
+	@media (min-width: $md) {
+		min-height: 400px;
+	}
+	@media (min-width: $lg) {
+		min-height: 100vh;
+	}
+	@media (min-width: $xl) {
+		min-height: 120vh;
+	}
+	&__title {
+		@include section-title;
+		position: absolute;
+		z-index: 5;
+		top: 5%;
+		left: 5%;
 
-.about__title {
-  @include section-title;
-  position: absolute;
-  z-index: 5;
-  top: 5%;
-  left: 5%;
+		@media (min-width: $lg) {
+			top: 10%;
+			left: 10%;
+		}
+		@media (min-width: $xl) {
+			top: 10%;
+			left: 10%;
+		}
+	}
 
-  @media (min-width: $lg) {
-    top: 10%;
-    left: 10%;
-  }
-  @media (min-width: $xl) {
-    top: 10%;
-    left: 10%;
-  }
-}
+	&__text {
+		width: 80%;
+		position: absolute;
+		top: 50%;
+		left: 10%;
+		font-size: 1.3rem;
+		margin: 0 auto;
 
-.about__text {
-  width: 80%;
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  font-size: 1.3rem;
-  margin: 0 auto;
+		@media (min-width: $md) {
+			left: 42%;
+			width: 48%;
+			top: 25%;
+		}
 
-  @media (min-width: $md) {
-    left: 42%;
-    width: 48%;
-    top: 25%;
-  }
+		@media (min-width: $lg) {
+			top: 50%;
+			left: 5%;
+			width: 33%;
+			position: relative;
+			z-index: 5;
+			margin-top: 20%;
+			font-family: $didactic;
+			font-weight: 400;
+			font-size: 1.3rem;
+		}
+		@media (min-width: $xl) {
+			font-size: 1.5rem;
+		}
+		@media (min-width: $xxl) {
+			font-size: 1.8rem;
+		}
+	}
 
-  @media (min-width: $lg) {
-    top: 50%;
-    left: 5%;
-    width: 33%;
-    position: relative;
-    z-index: 5;
-    margin-top: 20%;
-    font-family: $didactic;
-    font-weight: 400;
-    font-size: 1.3rem;
-  }
-  @media (min-width: $xl) {
-    font-size: 1.5rem;
-  }
-  @media (min-width: $xxl) {
-    font-size: 1.8rem;
-  }
-}
+	&__image {
+		width: 50%;
+		position: relative;
+		text-align: -webkit-right;
+		@media (min-width: $lg) {
+			width: 60%;
+		}
+		&-1 {
+			position: absolute;
+			top: 7%;
+			left: 27%;
+			width: 70vw;
+			box-shadow: $box-shadow;
 
-.about__image {
-  width: 50%;
-  position: relative;
-  text-align: -webkit-right;
-  @media (min-width: $lg) {
-    width: 60%;
-  }
-  .about_image-1 {
-    position: absolute;
-    top: 7%;
-    left: 27%;
-    width: 70vw;
-    box-shadow: $box-shadow;
+			@media (min-width: $md) {
+				width: 30vw;
+				left: 16%;
+			}
 
-
-    @media (min-width: $md) {
-      width: 30vw;
-      left: 16%;
-    }
-
-    @media (min-width: $lg) {
-      height: auto;
-      width: 55%;
-      left: 25%;
-      bottom: 25%;
-    }
-  }
+			@media (min-width: $lg) {
+				height: auto;
+				width: 55%;
+				left: 25%;
+				bottom: 25%;
+			}
+		}
+	}
 }
