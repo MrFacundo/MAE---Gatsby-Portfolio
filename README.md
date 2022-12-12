@@ -3,8 +3,7 @@
 ![Build Status](https://github.com/MrFacundo/MAE---Gatsby-Portfolio-/actions/workflows/pages/pages-build-deployment/badge.svg)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
-Visit the website (in Progress) at (maegatsbyportfoliomain48188.gatsbyjs.io)
-
+[Visit the website](maegatsbyportfoliomain48188.gatsbyjs.io) (in Progress).
 # Built with
 
 -   React
