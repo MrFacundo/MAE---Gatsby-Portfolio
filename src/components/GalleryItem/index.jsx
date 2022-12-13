@@ -12,6 +12,7 @@ export default function GalleryItem({
 	title,
 	updateActiveItem,
 	index,
+  landscape
 }) {
 	const ref = useRef(null);
 	const onScreen = useOnScreen(ref, 0.5);
@@ -30,7 +31,7 @@ export default function GalleryItem({
 			ref={ref}
 		>
 			<div></div>
-			<div className="gallery-item">
+			<div className={cn("gallery-item", { "gallery-item--landscape": landscape })}>
 				<div className="gallery-item__info">
 					<div className="gallery-item__info__heading">
 						<h1 className="gallery-item__info__title">{t(title)}</h1>

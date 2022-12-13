@@ -25,6 +25,21 @@
 	position: relative;
 	will-change: transform;
 
+	&--landscape {
+		.gallery-item__image {
+			@media (min-width: $lg) {
+				width: 80%;
+        left: 40%;
+			}
+		}
+
+		.gallery-item__info {
+			@media (min-width: $lg) {
+				max-width: 35%;
+			}
+		}
+	}
+
 	&__info {
 		height: 90%;
 		display: flex;
@@ -129,7 +144,7 @@
 			width: 55%;
 			height: 70%;
 			right: 0;
-			left: 70%;
+			left: 60%;
 			top: auto;
 		}
 	}

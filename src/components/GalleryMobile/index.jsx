@@ -11,6 +11,7 @@ function GalleryItemMobile({
 	excerpt_mobile,
 	subtitle,
 	title,
+	landscape,
 }) {
 	const ref = useRef(null);
 	const onScreen = useOnScreen(ref, 0.5);
@@ -24,7 +25,11 @@ function GalleryItemMobile({
 			})}
 			ref={ref}
 		>
-			<div className="gallery-item-mobile">
+			<div
+				className={cn("gallery-item-mobile", {
+					"gallery-item-mobile--landscape": landscape,
+				})}
+			>
 				<div className="gallery-item-heading-mobile">
 					<h1 className="gallery-info-title-mobile">{t(title)}</h1>
 					<h2 className="gallery-info-subtitle-mobile">
