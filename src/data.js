@@ -1,7 +1,9 @@
 import metodo from "./images/metodo.webp";
 import metodo_mobile from "./images/metodo_mobile.webp";
-import atletas from "./images/atletas.webp";
-import atletas_mobile from "./images/atletas_mobile.webp";
+// import atletas from "./images/atletas.webp";
+// import atletas_mobile from "./images/atletas_mobile.webp";
+import atletas_landscape from "./images/atletas_landscape.webp";
+import atletas_landscape_mobile from "./images/atletas_landscape_mobile.webp";
 import general from "./images/general.webp";
 import general_mobile from "./images/general_mobile.webp";
 import limpiezas from "./images/limpiezas.webp";
@@ -15,7 +17,6 @@ const gallery_items = [
 		subtitle: "",
 		excerpt: "gallery_item_1_text",
 		excerpt_mobile: "gallery_item_1_text_mobile",
-
 		img_src: metodo,
 		img_src_mobile: metodo_mobile,
 	},
@@ -24,8 +25,9 @@ const gallery_items = [
 		subtitle: "gallery_item_2_subtitle",
 		excerpt: "gallery_item_2_text",
 		excerpt_mobile: "gallery_item_2_text_mobile",
-		img_src: atletas,
-		img_src_mobile: atletas_mobile,
+		img_src: atletas_landscape,
+		img_src_mobile: atletas_landscape_mobile,
+		landscape: true,
 	},
 	{
 		title: "gallery_item_3_title",
