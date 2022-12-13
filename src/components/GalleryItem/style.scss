@@ -28,8 +28,9 @@
 	&--landscape {
 		.gallery-item__image {
 			@media (min-width: $lg) {
-				width: 80%;
-        left: 40%;
+				width: 70%;
+				height: 60%;
+				left: 40%;
 			}
 		}
 
@@ -141,7 +142,7 @@
 			top: 33%;
 		}
 		@media (min-width: $lg) {
-			width: 55%;
+			width: 40%;
 			height: 70%;
 			right: 0;
 			left: 60%;
