@@ -25,7 +25,7 @@ export default function Gallery() {
 					pin: true,
 					scrub: 0.5,
 					snap: 1 / (sections.length - 1),
-					end: () => "5000",
+					end: () => `+=${ref.current.offsetWidth}`,
 				},
 			});
 			ScrollTrigger.refresh(true);

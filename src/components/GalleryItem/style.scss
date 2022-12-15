@@ -3,8 +3,11 @@
 .gallery-item-wrapper {
 	aspect-ratio: 16/9;
 	height: 100%;
+	min-height: 900px;
+
 	display: grid;
 	grid-template-columns: 20vw 1fr 20px;
+	
 	width: 100vw;
 	@media (min-width: $lg) {
 		grid-template-columns: 20vw 1fr 10vw;
@@ -27,7 +30,9 @@
 
 	&--landscape {
 		.gallery-item__image {
+			top: 30%;
 			@media (min-width: $lg) {
+				top: 27%;
 				width: 70%;
 				height: 60%;
 				left: 40%;
@@ -104,7 +109,7 @@
 
 		&__excerpt {
 			justify-self: auto;
-			width: 85vw;
+			width: 85%;
 			position: relative;
 			line-height: 1.5rem;
 			font-family: $didactic;
@@ -126,7 +131,7 @@
 		background-size: cover;
 		background-position: top;
 		transform-origin: center;
-		width: 85%;
+		width: 65%;
 		float: right;
 		will-change: transform;
 		transform: scale(0.8);
@@ -136,10 +141,10 @@
 		right: 0;
 		left: 0;
 		top: 30%;
-		height: 30%;
+		height: 45%;
 		box-shadow: $box-shadow;
 		@media (min-width: $sm) {
-			top: 33%;
+			top: 27%;
 		}
 		@media (min-width: $lg) {
 			width: 40%;
