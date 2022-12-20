@@ -57,15 +57,15 @@ export default function Contact() {
 								aria-label="Chat on WhatsApp"
 								href="https://wa.me/351913547520"
 							>
-								<FontAwesomeIcon icon={faWhatsapp} />{" "}
 								<span>WhatsApp </span>
+								<FontAwesomeIcon icon={faWhatsapp} />{" "}
 							</a>
 						)}
 					</div>
 
 					<div className="contacts__phone">
 						<span className="phone-title">
-							{t("contact_phone")}
+						{isMobile ? t("contact_phone_mobile") :t("contact_phone") }
 						</span>
 						<p className="phone-content">+351 913 547 520</p>
 					</div>
