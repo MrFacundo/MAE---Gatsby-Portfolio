@@ -1,7 +1,7 @@
-<h1 align="center">Maria Danai Eguiguren</h1>
-<br /> 
 ![Build Status](https://github.com/MrFacundo/MAE---Gatsby-Portfolio-/actions/workflows/pages/pages-build-deployment/badge.svg)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+<h1 align="center">Maria Danai Eguiguren</h1>
+<br /> 
 <p align="center">
 	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/MrFacundo/MAE---Gatsby-Portfolio-?color=lightblue" />
 	<img alt="Number of lines of code" src="https://img.shields.io/tokei/lines/github/MrFacundo/MAE---Gatsby-Portfolio-?color=critical" />
