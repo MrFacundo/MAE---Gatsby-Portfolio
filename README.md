@@ -1,6 +1,6 @@
 ![Build Status](https://github.com/MrFacundo/MAE---Gatsby-Portfolio-/actions/workflows/pages/pages-build-deployment/badge.svg)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
-<h1 align="center">Maria Danai Eguiguren</h1>
+<h1 align="center">Maria Danai Eguiguren - Assisted Healing</h1>
 <br /> 
 <p align="center">
 	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/MrFacundo/MAE---Gatsby-Portfolio-?color=lightblue" />
