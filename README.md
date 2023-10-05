@@ -11,7 +11,7 @@
 
 ### Maria Danai Eguiguren - Assisted Healing is a single page landing page built on Gatsby
 
-###  [🚀️ Visit the site](https://maegatsbyportfoliomain48188.gatsbyjs.io/) (in Progress).
+###  [🚀️ Visit the site](https://lucent-custard-0e86fa.netlify.app/) (in Progress).
 
 ### Built with
 
